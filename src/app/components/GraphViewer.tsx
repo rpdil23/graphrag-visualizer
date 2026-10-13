@@ -4,18 +4,24 @@ import React, {
   useRef,
   useEffect,
   useMemo,
+  Suspense,
+  lazy,
 } from "react";
 import ForceGraph2D from "react-force-graph-2d";
-import ForceGraph3D from "react-force-graph-3d";
 import {
   CustomGraphData,
   CustomLink,
   CustomNode,
 } from "../models/custom-graph-data";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Box,
   Button,
   Checkbox,
+  Chip,
+  CircularProgress,
   FormControlLabel,
   FormGroup,
   IconButton,
@@ -29,6 +35,7 @@ import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import SearchIcon from "@mui/icons-material/Search";
 import DeleteIcon from "@mui/icons-material/Delete";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Fuse from "fuse.js";
 import {
   CSS2DRenderer,
@@ -44,6 +51,8 @@ import APISearchDrawer from "./APISearchDrawer";
 import SpriteText from "three-spritetext";
 import { useGraphForces } from "../hooks/useGraphForces";
 import { sanitizeGraphData } from "../utils/sanitizeGraphData";
+
+const ForceGraph3D = lazy(() => import("react-force-graph-3d"));
 
 type Coords = {
   x: number;
@@ -135,7 +144,10 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
   const [showLinkLabels, setShowLinkLabels] = useState(false);
   const [showHighlight, setShowHighlight] = useState(true);
   const graphRef = useRef<any>();
-  const extraRenderers = [new CSS2DRenderer() as any as Renderer];
+  const extraRenderers = useMemo(
+    () => [new CSS2DRenderer() as any as Renderer],
+    [],
+  );
   const nodeCount = data.nodes.length;
   const linkCount = data.links.length;
 
@@ -157,12 +169,62 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
     initialGraphData.current = sanitizedBaseData;
   }
 
+  const [hiddenTypes, setHiddenTypes] = useState<Set<string>>(new Set());
+
+  const availableEntityTypes = useMemo(() => {
+    const counts: Record<string, number> = {};
+    data.nodes.forEach((node) => {
+      if (
+        node.type &&
+        !node.covariate_type &&
+        !["RAW_DOCUMENT", "CHUNK", "COMMUNITY", "FINDING"].includes(node.type)
+      ) {
+        counts[node.type] = (counts[node.type] || 0) + 1;
+      }
+    });
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([type, count]) => ({ type, count }));
+  }, [data.nodes]);
+
+  const toggleType = useCallback((type: string) => {
+    setHiddenTypes((prev) => {
+      const next = new Set(prev);
+      if (next.has(type)) {
+        next.delete(type);
+      } else {
+        next.add(type);
+      }
+      return next;
+    });
+  }, []);
+
+  const showAllTypes = useCallback(() => {
+    setHiddenTypes(new Set());
+  }, []);
+
+  const hideAllTypes = useCallback(() => {
+    setHiddenTypes(new Set(availableEntityTypes.map((item) => item.type)));
+  }, [availableEntityTypes]);
+
   const displayGraphData = useMemo(() => {
-    if (apiSearchResults && searchGraphData) {
-      return searchGraphData;
+    const base = apiSearchResults && searchGraphData ? searchGraphData : data;
+    if (hiddenTypes.size === 0) {
+      return sanitizeGraphData(base);
     }
-    return sanitizeGraphData(data);
-  }, [apiSearchResults, searchGraphData, data]);
+    const filteredNodes = base.nodes.filter(
+      (node) => !node.type || !hiddenTypes.has(node.type),
+    );
+    const validNodeIds = new Set(filteredNodes.map((n) => n.id));
+    const filteredLinks = base.links.filter((link) => {
+      const source = link.source as any;
+      const target = link.target as any;
+      const sourceId = typeof source === "object" ? source.id : source;
+      const targetId = typeof target === "object" ? target.id : target;
+      return validNodeIds.has(sourceId) && validNodeIds.has(targetId);
+    });
+    return sanitizeGraphData({ nodes: filteredNodes, links: filteredLinks });
+  }, [apiSearchResults, searchGraphData, data, hiddenTypes]);
 
   const graphRenderKey = useMemo(
     () =>
@@ -304,22 +366,40 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
     setSearchGraphData(updatedGraphData);
   };
 
-  const fuse = new Fuse([...data.nodes, ...data.links], {
-    keys: [
-      "uuid",
-      "id",
-      "name",
-      "type",
-      "description",
-      "source",
-      "target",
-      "title",
-      "summary",
-    ],
-    threshold: 0.3,
-  });
+  const fuse = useMemo(
+    () =>
+      new Fuse([...data.nodes, ...data.links], {
+        keys: [
+          "uuid",
+          "id",
+          "name",
+          "type",
+          "description",
+          "source",
+          "target",
+          "title",
+          "summary",
+        ],
+        threshold: 0.3,
+      }),
+    [data.nodes, data.links],
+  );
+
+  const hoverLinkTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (hoverLinkTimeoutRef.current) {
+        clearTimeout(hoverLinkTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const handleNodeHover = useCallback((node: CustomNode | null) => {
+    if (hoverLinkTimeoutRef.current) {
+      clearTimeout(hoverLinkTimeoutRef.current);
+    }
+
     const newHighlightNodes = new Set<CustomNode>();
     const newHighlightLinks = new Set<CustomLink>();
 
@@ -335,17 +415,26 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
   }, []);
 
   const handleLinkHover = useCallback((link: CustomLink | null) => {
-    const newHighlightNodes = new Set<CustomNode>();
-    const newHighlightLinks = new Set<CustomLink>();
-
-    if (link) {
-      newHighlightLinks.add(link);
-      if (typeof link.source !== "string") newHighlightNodes.add(link.source);
-      if (typeof link.target !== "string") newHighlightNodes.add(link.target);
+    if (hoverLinkTimeoutRef.current) {
+      clearTimeout(hoverLinkTimeoutRef.current);
     }
 
-    setHighlightNodes(newHighlightNodes);
-    setHighlightLinks(newHighlightLinks);
+    // Debounce link hover to prevent state churn when mouse crosses dense link clusters
+    hoverLinkTimeoutRef.current = setTimeout(() => {
+      const newHighlightNodes = new Set<CustomNode>();
+      const newHighlightLinks = new Set<CustomLink>();
+
+      if (link) {
+        newHighlightLinks.add(link);
+        const source = link.source as any;
+        const target = link.target as any;
+        if (typeof source !== "string" && source) newHighlightNodes.add(source);
+        if (typeof target !== "string" && target) newHighlightNodes.add(target);
+      }
+
+      setHighlightNodes(newHighlightNodes);
+      setHighlightLinks(newHighlightLinks);
+    }, 40);
   }, []);
 
   const paintRing = useCallback(
@@ -521,7 +610,9 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
         : "rgba(255, 255, 255, 0.6)";
 
     // Calculate label dimensions
-    const textWidth = ctx.measureText(label).width;
+    const anyNode = node as any;
+    const textWidth =
+      anyNode.__textWidth ?? (anyNode.__textWidth = ctx.measureText(label).width);
     const boxWidth = textWidth + padding * 2;
     const boxHeight = fontSize + padding * 2;
 
@@ -787,6 +878,80 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           />
         </FormGroup>
 
+        {availableEntityTypes.length > 0 && (
+          <Accordion
+            disableGutters
+            elevation={0}
+            sx={{
+              backgroundColor:
+                theme.palette.mode === "dark"
+                  ? "rgba(30, 30, 30, 0.7)"
+                  : "rgba(255, 255, 255, 0.8)",
+              backdropFilter: "blur(6px)",
+              borderRadius: "8px !important",
+              border: "1px solid",
+              borderColor: "divider",
+              "&:before": { display: "none" },
+              width: "100%",
+              maxWidth: 220,
+              mt: 1,
+            }}
+          >
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              sx={{
+                px: 1.5,
+                minHeight: 36,
+                "& .MuiAccordionSummary-content": { my: 0.5 },
+              }}
+            >
+              <Typography variant="body2" sx={{ fontWeight: 600 }}>
+                Entity Types ({availableEntityTypes.length - hiddenTypes.size}/
+                {availableEntityTypes.length})
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails
+              sx={{ px: 1.5, pt: 0, pb: 1, maxHeight: 180, overflowY: "auto" }}
+            >
+              <Box sx={{ display: "flex", gap: 1, mb: 1 }}>
+                <Button
+                  size="small"
+                  variant="text"
+                  sx={{ p: 0, minWidth: 0, fontSize: "0.75rem" }}
+                  onClick={showAllTypes}
+                >
+                  Select All
+                </Button>
+                <Button
+                  size="small"
+                  variant="text"
+                  sx={{ p: 0, minWidth: 0, fontSize: "0.75rem" }}
+                  onClick={hideAllTypes}
+                >
+                  Clear All
+                </Button>
+              </Box>
+              <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
+                {availableEntityTypes.map(({ type, count }) => {
+                  const isHidden = hiddenTypes.has(type);
+                  return (
+                    <Chip
+                      key={type}
+                      label={`${type} (${count})`}
+                      size="small"
+                      clickable
+                      color={isHidden ? "default" : "primary"}
+                      variant={isHidden ? "outlined" : "filled"}
+                      onClick={() => toggleType(type)}
+                      sx={{ fontSize: "0.7rem", opacity: isHidden ? 0.6 : 1 }}
+                    />
+                  );
+                })}
+              </Box>
+            </AccordionDetails>
+          </Accordion>
+        )}
+
         {totalEntities > 0 && (
           <Box sx={{ width: 200, mt: 2 }}>
             <Typography variant="body2" gutterBottom>
@@ -860,6 +1025,9 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           nodeAutoColorBy="type"
           nodeRelSize={NODE_R}
           nodeVal={(node) => getNodeSize(node as CustomNode)}
+          warmupTicks={50}
+          cooldownTicks={100}
+          cooldownTime={4000}
           linkWidth={(link) =>
             showHighlight && highlightLinks.has(link) ? 5 : 1
           }
@@ -877,17 +1045,25 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
                 ? "after"
                 : undefined
           }
-          nodeCanvasObject={(node, ctx) => {
+          nodeCanvasObject={(node, ctx, globalScale) => {
             if (showHighlight && highlightNodes.has(node)) {
               paintRing(node as CustomNode, ctx);
             }
-            if (showLabels) {
+            if (
+              showLabels &&
+              (globalScale >= 1.2 ||
+                (showHighlight && highlightNodes.has(node as CustomNode)))
+            ) {
               renderNodeLabel(node as CustomNode, ctx);
             }
           }}
           linkCanvasObjectMode={() => (showLinkLabels ? "after" : undefined)}
-          linkCanvasObject={(link, ctx) => {
-            if (showLinkLabels) {
+          linkCanvasObject={(link, ctx, globalScale) => {
+            if (
+              showLinkLabels &&
+              (globalScale >= 1.5 ||
+                (showHighlight && highlightLinks.has(link as CustomLink)))
+            ) {
               const label = link.type || "";
               const fontSize = 4;
               ctx.font = `${fontSize}px Sans-Serif`;
@@ -910,7 +1086,10 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
                 source.y !== undefined &&
                 target.y !== undefined
               ) {
-                const textWidth = ctx.measureText(label).width;
+                const anyLink = link as any;
+                const textWidth =
+                  anyLink.__textWidth ??
+                  (anyLink.__textWidth = ctx.measureText(label).width);
                 const posX = (source.x + target.x) / 2 - textWidth / 2;
                 const posY = (source.y + target.y) / 2;
                 ctx.fillText(label, posX, posY);
@@ -925,51 +1104,74 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           linkColor={getLinkColor}
         />
       ) : (
-        <ForceGraph3D
-          key={graphRenderKey}
-          ref={graphRef}
-          extraRenderers={extraRenderers}
-          graphData={displayGraphData}
-          nodeAutoColorBy="type"
-          nodeRelSize={NODE_R}
-          nodeVal={(node) => getNodeSize(node as CustomNode)}
-          linkWidth={(link) =>
-            showHighlight && highlightLinks.has(link) ? 5 : 1
+        <Suspense
+          fallback={
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100%",
+              }}
+            >
+              <CircularProgress size={44} />
+            </Box>
           }
-          linkDirectionalParticles={showHighlight ? 4 : 0}
-          linkDirectionalParticleWidth={(link) =>
-            showHighlight && highlightLinks.has(link) ? 4 : 0
-          }
-          nodeThreeObject={nodeThreeObject}
-          nodeThreeObjectExtend={true}
-          onNodeHover={showHighlight ? handleNodeHover : undefined}
-          onLinkHover={showHighlight ? handleLinkHover : undefined}
-          onNodeClick={handleNodeClick}
-          onLinkClick={handleLinkClick}
-          backgroundColor={getBackgroundColor()}
-          linkColor={get3DLinkColor}
-          linkThreeObjectExtend={true}
-          linkThreeObject={(link) => {
-            if (!showLinkLabels) new THREE.Object3D();
-            const sprite = new SpriteText(`${link.type}`);
-            sprite.color = "lightgrey";
-            sprite.textHeight = 1.5;
-            return sprite;
-          }}
-          linkPositionUpdate={(sprite, { start, end }) => {
-            if (!showLinkLabels) return;
+        >
+          <ForceGraph3D
+            key={graphRenderKey}
+            ref={graphRef}
+            extraRenderers={extraRenderers}
+            graphData={displayGraphData}
+            nodeAutoColorBy="type"
+            nodeRelSize={NODE_R}
+            nodeVal={(node) => getNodeSize(node as CustomNode)}
+            linkWidth={(link) =>
+              showHighlight && highlightLinks.has(link as CustomLink) ? 5 : 1
+            }
+            linkDirectionalParticles={showHighlight ? 4 : 0}
+            linkDirectionalParticleWidth={(link) =>
+              showHighlight && highlightLinks.has(link as CustomLink) ? 4 : 0
+            }
+            nodeThreeObject={(node) => nodeThreeObject(node as CustomNode)}
+            nodeThreeObjectExtend={true}
+            onNodeHover={
+              showHighlight
+                ? (node) => handleNodeHover(node as CustomNode | null)
+                : undefined
+            }
+            onLinkHover={
+              showHighlight
+                ? (link) => handleLinkHover(link as CustomLink | null)
+                : undefined
+            }
+            onNodeClick={(node) => handleNodeClick(node as CustomNode)}
+            onLinkClick={(link) => handleLinkClick(link as CustomLink)}
+            backgroundColor={getBackgroundColor()}
+            linkColor={(link) => get3DLinkColor(link as CustomLink)}
+            linkThreeObjectExtend={true}
+            linkThreeObject={(link) => {
+              if (!showLinkLabels) return new THREE.Object3D();
+              const sprite = new SpriteText(`${(link as CustomLink).type}`);
+              sprite.color = "lightgrey";
+              sprite.textHeight = 1.5;
+              return sprite;
+            }}
+            linkPositionUpdate={(sprite, { start, end }) => {
+              if (!showLinkLabels) return;
 
-            const middlePos = ["x", "y", "z"].reduce((acc, c) => {
-              acc[c as keyof Coords] =
-                start[c as keyof Coords] +
-                (end[c as keyof Coords] - start[c as keyof Coords]) / 2;
-              return acc;
-            }, {} as Coords);
+              const middlePos = ["x", "y", "z"].reduce((acc, c) => {
+                acc[c as keyof Coords] =
+                  start[c as keyof Coords] +
+                  (end[c as keyof Coords] - start[c as keyof Coords]) / 2;
+                return acc;
+              }, {} as Coords);
 
-            // Position sprite
-            Object.assign(sprite.position, middlePos);
-          }}
-        />
+              // Position sprite
+              Object.assign(sprite.position, middlePos);
+            }}
+          />
+        </Suspense>
       )}
       <Box
         sx={{

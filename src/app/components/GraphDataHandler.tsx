@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import GraphViewer from "./GraphViewer";
-import { Box, Container, Tab, Tabs } from "@mui/material";
+import { Box, Container, Tab, Tabs, CircularProgress } from "@mui/material";
 import { useDropzone } from "react-dropzone";
 import DropZone from "./DropZone";
 import Introduction from "./Introduction";
 import useFileHandler from "../hooks/useFileHandler";
 import useGraphData from "../hooks/useGraphData";
-import DataTableContainer from "./DataTableContainer";
 import ReactGA from "react-ga4";
+
+const GraphViewer = lazy(() => import("./GraphViewer"));
+const DataTableContainer = lazy(() => import("./DataTableContainer"));
 
 const getTabIndexFromPathname = (pathname: string): number => {
   switch (pathname) {
@@ -159,52 +160,83 @@ const GraphDataHandler: React.FC = () => {
             overflow: "hidden",
           }}
         >
-          <GraphViewer
-            data={graphData}
-            graphType={graphType}
-            isFullscreen={isFullscreen}
-            onToggleFullscreen={toggleFullscreen}
-            onToggleGraphType={toggleGraphType}
-            includeDocuments={includeDocuments}
-            includeTextUnits={includeTextUnits}
-            onIncludeDocumentsChange={() =>
-              setIncludeDocuments(!includeDocuments)
+          <Suspense
+            fallback={
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "100%",
+                }}
+              >
+                <CircularProgress size={44} />
+              </Box>
             }
-            onIncludeTextUnitsChange={() =>
-              setIncludeTextUnits(!includeTextUnits)
-            }
-            includeCommunities={includeCommunities}
-            onIncludeCommunitiesChange={() =>
-              setIncludeCommunities(!includeCommunities)
-            }
-            includeCovariates={includeCovariates}
-            onIncludeCovariatesChange={() =>
-              setIncludeCovariates(!includeCovariates)
-            }
-            hasDocuments={hasDocuments}
-            hasTextUnits={hasTextUnits}
-            hasCommunities={hasCommunities}
-            hasCovariates={hasCovariates}
-            maxEntities={maxEntities}
-            onMaxEntitiesChange={setMaxEntities}
-            totalEntities={entities.length}
-          />
+          >
+            <GraphViewer
+              data={graphData}
+              graphType={graphType}
+              isFullscreen={isFullscreen}
+              onToggleFullscreen={toggleFullscreen}
+              onToggleGraphType={toggleGraphType}
+              includeDocuments={includeDocuments}
+              includeTextUnits={includeTextUnits}
+              onIncludeDocumentsChange={() =>
+                setIncludeDocuments(!includeDocuments)
+              }
+              onIncludeTextUnitsChange={() =>
+                setIncludeTextUnits(!includeTextUnits)
+              }
+              includeCommunities={includeCommunities}
+              onIncludeCommunitiesChange={() =>
+                setIncludeCommunities(!includeCommunities)
+              }
+              includeCovariates={includeCovariates}
+              onIncludeCovariatesChange={() =>
+                setIncludeCovariates(!includeCovariates)
+              }
+              hasDocuments={hasDocuments}
+              hasTextUnits={hasTextUnits}
+              hasCommunities={hasCommunities}
+              hasCovariates={hasCovariates}
+              maxEntities={maxEntities}
+              onMaxEntitiesChange={setMaxEntities}
+              totalEntities={entities.length}
+            />
+          </Suspense>
         </Box>
       )}
 
       {tabIndex === 2 && (
         <Box sx={{ display: "flex", height: "calc(100vh - 64px)" }}>
-          <DataTableContainer
-            selectedTable={selectedTable}
-            setSelectedTable={setSelectedTable}
-            entities={entities}
-            relationships={relationships}
-            documents={documents}
-            textunits={textunits}
-            communities={communities}
-            communityReports={communityReports}
-            covariates={covariates}
-          />
+          <Suspense
+            fallback={
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
+                <CircularProgress size={44} />
+              </Box>
+            }
+          >
+            <DataTableContainer
+              selectedTable={selectedTable}
+              setSelectedTable={setSelectedTable}
+              entities={entities}
+              relationships={relationships}
+              documents={documents}
+              textunits={textunits}
+              communities={communities}
+              communityReports={communityReports}
+              covariates={covariates}
+            />
+          </Suspense>
         </Box>
       )}
     </>
