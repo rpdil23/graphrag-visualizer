@@ -49,7 +49,6 @@ import { SearchResult } from "../models/search-result";
 import agent from "../api/agent";
 import APISearchDrawer from "./APISearchDrawer";
 import SpriteText from "three-spritetext";
-import { useGraphForces } from "../hooks/useGraphForces";
 import { sanitizeGraphData } from "../utils/sanitizeGraphData";
 
 const ForceGraph3D = lazy(() => import("react-force-graph-3d"));
@@ -238,28 +237,9 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
     setHoverNode(null);
   }, [graphRenderKey]);
 
-  const getNodeSize = useCallback((node: CustomNode) => {
-    const type = node.type;
-    switch (type) {
-      case "RAW_DOCUMENT":
-        return 9;
-      case "CHUNK":
-        return 6;
-      case "COMMUNITY":
-        return 13;
-      case "FINDING":
-        return 3;
-      default:
-        // Entity nodes (PERSON, ORGANIZATION, etc.) or covariate nodes
-        return node.covariate_type ? 1 : 20;
-    }
-  }, []);
-
   useEffect(() => {
     checkServerStatus();
   }, []);
-
-  useGraphForces(graphRef, getNodeSize, displayGraphData);
 
   const toggleApiDrawer = (open: boolean) => () => {
     setApiDrawerOpen(open);
@@ -439,8 +419,7 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
 
   const paintRing = useCallback(
     (node: CustomNode, ctx: CanvasRenderingContext2D) => {
-      const size = getNodeSize(node);
-      const radius = Math.sqrt(size) * NODE_R * 1.4;
+      const radius = NODE_R * 1.4;
       ctx.beginPath();
       ctx.arc(node.x!, node.y!, radius, 0, 2 * Math.PI, false);
       if (highlightNodes.has(node)) {
@@ -453,7 +432,7 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
       ctx.fill();
       ctx.globalAlpha = 1; // reset alpha for other drawings
     },
-    [hoverNode, highlightNodes, getNodeSize],
+    [hoverNode, highlightNodes],
   );
 
   const handleSearch = () => {
@@ -1024,8 +1003,6 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           graphData={displayGraphData}
           nodeAutoColorBy="type"
           nodeRelSize={NODE_R}
-          nodeVal={(node) => getNodeSize(node as CustomNode)}
-          warmupTicks={50}
           cooldownTicks={100}
           cooldownTime={4000}
           linkWidth={(link) =>
@@ -1125,7 +1102,6 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
             graphData={displayGraphData}
             nodeAutoColorBy="type"
             nodeRelSize={NODE_R}
-            nodeVal={(node) => getNodeSize(node as CustomNode)}
             linkWidth={(link) =>
               showHighlight && highlightLinks.has(link as CustomLink) ? 5 : 1
             }

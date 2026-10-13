@@ -143,7 +143,10 @@ const GraphDataHandler: React.FC = () => {
             flexDirection: "column",
           }}
         >
-          <DropZone {...{ getRootProps, getInputProps, isDragActive }} />
+          <DropZone
+            {...{ getRootProps, getInputProps, isDragActive }}
+            onFolderSelect={onDrop}
+          />
           <Introduction />
         </Container>
       )}
