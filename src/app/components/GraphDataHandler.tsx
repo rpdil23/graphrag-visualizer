@@ -1,6 +1,14 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Box, Container, Tab, Tabs, CircularProgress } from "@mui/material";
+import {
+  Box,
+  Container,
+  Tab,
+  Tabs,
+  CircularProgress,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 import { useDropzone } from "react-dropzone";
 import DropZone from "./DropZone";
 import Introduction from "./Introduction";
@@ -29,15 +37,7 @@ const GraphDataHandler: React.FC = () => {
   const tabIndex = getTabIndexFromPathname(location.pathname);
   const [graphType, setGraphType] = useState<"2d" | "3d">("2d");
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [selectedTable, setSelectedTable] = useState<
-    | "entities"
-    | "relationships"
-    | "documents"
-    | "textunits"
-    | "communities"
-    | "communityReports"
-    | "covariates"
-  >("entities");
+  const [selectedTable, setSelectedTable] = useState<any>("entities");
   const [includeDocuments, setIncludeDocuments] = useState(false);
   const [includeTextUnits, setIncludeTextUnits] = useState(false);
   const [includeCommunities, setIncludeCommunities] = useState(false);
@@ -45,6 +45,8 @@ const GraphDataHandler: React.FC = () => {
   const [maxEntities, setMaxEntities] = useState(500);
 
   const {
+    dataSource,
+    setDataSource,
     entities,
     relationships,
     documents,
@@ -52,6 +54,10 @@ const GraphDataHandler: React.FC = () => {
     communities,
     covariates,
     communityReports,
+    graphifyData,
+    graphifyReport,
+    graphifyManifest,
+    graphifyCommunities,
     handleFilesRead,
     loadDefaultFiles,
   } = useFileHandler();
@@ -69,12 +75,46 @@ const GraphDataHandler: React.FC = () => {
     includeCommunities,
     includeCovariates,
     maxEntities,
+    dataSource,
+    graphifyData,
   );
 
   const hasDocuments = documents.length > 0;
   const hasTextUnits = textunits.length > 0;
   const hasCommunities = communities.length > 0;
   const hasCovariates = covariates.length > 0;
+
+  const hasGraphRAG = entities.length > 0;
+  const hasGraphify = Boolean(graphifyData && graphifyData.nodes.length > 0);
+
+  const totalEntities =
+    dataSource === "graphify"
+      ? (graphifyData?.nodes?.length || 0)
+      : entities.length;
+
+  useEffect(() => {
+    if (dataSource === "graphify") {
+      setSelectedTable((prev: string) =>
+        ["nodes", "links", "communities", "report", "manifest"].includes(prev)
+          ? prev
+          : "nodes",
+      );
+    } else {
+      setSelectedTable((prev: string) =>
+        [
+          "entities",
+          "relationships",
+          "documents",
+          "textunits",
+          "communities",
+          "communityReports",
+          "covariates",
+        ].includes(prev)
+          ? prev
+          : "entities",
+      );
+    }
+  }, [dataSource]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "development") {
@@ -103,6 +143,9 @@ const GraphDataHandler: React.FC = () => {
     noKeyboard: true,
     accept: {
       "application/x-parquet": [".parquet"],
+      "application/json": [".json"],
+      "text/markdown": [".md"],
+      "text/plain": [".json", ".md"],
     },
   });
 
@@ -129,11 +172,47 @@ const GraphDataHandler: React.FC = () => {
 
   return (
     <>
-      <Tabs value={tabIndex} onChange={handleTabChange} centered>
-        <Tab label="Upload Artifacts" />
-        <Tab label="Graph Visualization" />
-        <Tab label="Data Tables" />
-      </Tabs>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative",
+        }}
+      >
+        <Tabs value={tabIndex} onChange={handleTabChange} centered>
+          <Tab label="Upload Artifacts" />
+          <Tab label="Graph Visualization" />
+          <Tab label="Data Tables" />
+        </Tabs>
+
+        {hasGraphRAG && hasGraphify && tabIndex > 0 && (
+          <Box
+            sx={{
+              position: "absolute",
+              right: 16,
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+            }}
+          >
+            <ToggleButtonGroup
+              value={dataSource}
+              exclusive
+              onChange={(_, val) => val && setDataSource(val)}
+              size="small"
+            >
+              <ToggleButton value="graphrag" sx={{ px: 1.5, py: 0.25, fontSize: "0.75rem" }}>
+                GraphRAG
+              </ToggleButton>
+              <ToggleButton value="graphify" sx={{ px: 1.5, py: 0.25, fontSize: "0.75rem" }}>
+                Graphify
+              </ToggleButton>
+            </ToggleButtonGroup>
+          </Box>
+        )}
+      </Box>
+
       {tabIndex === 0 && (
         <Container
           maxWidth="md"
@@ -150,6 +229,7 @@ const GraphDataHandler: React.FC = () => {
           <Introduction />
         </Container>
       )}
+
       {tabIndex === 1 && (
         <Box
           p={3}
@@ -205,7 +285,8 @@ const GraphDataHandler: React.FC = () => {
               hasCovariates={hasCovariates}
               maxEntities={maxEntities}
               onMaxEntitiesChange={setMaxEntities}
-              totalEntities={entities.length}
+              totalEntities={totalEntities}
+              dataSource={dataSource}
             />
           </Suspense>
         </Box>
@@ -238,6 +319,13 @@ const GraphDataHandler: React.FC = () => {
               communities={communities}
               communityReports={communityReports}
               covariates={covariates}
+              dataSource={dataSource}
+              setDataSource={setDataSource}
+              graphifyNodes={graphifyData?.nodes || []}
+              graphifyLinks={graphifyData?.links || []}
+              graphifyCommunities={graphifyCommunities}
+              graphifyReport={graphifyReport}
+              graphifyManifest={graphifyManifest}
             />
           </Suspense>
         </Box>

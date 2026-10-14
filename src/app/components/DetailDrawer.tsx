@@ -45,11 +45,15 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
   linkedRelationships,
 }) => {
   const getNodeName = (node: string | CustomNode) => {
-    return typeof node === "object" ? node.name : node;
+    if (typeof node === "object") return node.name;
+    const match = linkedNodes.find((n) => n.id === node);
+    return match ? match.name : node;
   };
 
   const getNodeType = (node: string | CustomNode) => {
-    return typeof node === "object" ? node.type : node;
+    if (typeof node === "object") return node.type;
+    const match = linkedNodes.find((n) => n.id === node);
+    return match ? match.type : node;
   };
 
   const getFilteredNodeColumns = (
@@ -108,6 +112,14 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
     });
 
     validAccessorKeys.add("uuid");
+    validAccessorKeys.add("name");
+    validAccessorKeys.add("type");
+    validAccessorKeys.add("community_name");
+    validAccessorKeys.add("source_file");
+    validAccessorKeys.add("source_location");
+    validAccessorKeys.add("confidence");
+    validAccessorKeys.add("degree");
+
     return customNodeColumns.filter(
       (column) =>
         column.accessorKey && validAccessorKeys.has(column.accessorKey)
@@ -135,7 +147,6 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
         >
           {selectedNode ? (
             <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-              {/* Node Details: {selectedNode.id.toString()} */}
               Node Details: {selectedNode.name.toString()}
             </Typography>
           ) : (
@@ -151,7 +162,7 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
                   {"}"}
                   {")"}
                   {"-[:"}
-                  {selectedRelationship.type}
+                  {selectedRelationship.relation || selectedRelationship.type}
                   {"]->"}
                   {"(:"}
                   {getNodeType(selectedRelationship.target)} {"{name: "}
@@ -201,6 +212,21 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
                 </Typography>
               )}
 
+              {selectedNode.community_name && (
+                <Typography>Community: {selectedNode.community_name}</Typography>
+              )}
+              {selectedNode.source_file && (
+                <Typography>
+                  Source File: {selectedNode.source_file}
+                  {selectedNode.source_location ? ` (${selectedNode.source_location})` : ""}
+                </Typography>
+              )}
+              {selectedNode.confidence && (
+                <Typography>Confidence: {selectedNode.confidence}</Typography>
+              )}
+              {selectedNode.degree !== undefined && (
+                <Typography>Degree: {selectedNode.degree}</Typography>
+              )}
               {selectedNode.description && (
                 <Typography>Description: {selectedNode.description}</Typography>
               )}
@@ -209,13 +235,6 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
                   Human Readable ID: {selectedNode.human_readable_id}
                 </Typography>
               )}
-
-              {/* {selectedNode.human_readable_id ||
-                (selectedNode.human_readable_id === 0 && (
-                  <Typography>
-                    Human Readable ID: {selectedNode.human_readable_id}
-                  </Typography>
-                ))} */}
               {selectedNode.raw_content && (
                 <Typography>Raw Content: {selectedNode.raw_content}</Typography>
               )}
@@ -236,7 +255,21 @@ const DetailDrawer: React.FC<DetailDrawerProps> = ({
               <Typography>
                 Target: {getNodeName(selectedRelationship.target)}
               </Typography>
-              <Typography>Type: {selectedRelationship.type}</Typography>
+              <Typography>
+                Relation: {selectedRelationship.relation || selectedRelationship.type}
+              </Typography>
+              {selectedRelationship.source_file && (
+                <Typography>
+                  Source File: {selectedRelationship.source_file}
+                  {selectedRelationship.source_location ? ` (${selectedRelationship.source_location})` : ""}
+                </Typography>
+              )}
+              {selectedRelationship.confidence && (
+                <Typography>
+                  Confidence: {selectedRelationship.confidence}
+                  {selectedRelationship.confidence_score ? ` (${(selectedRelationship.confidence_score * 100).toFixed(0)}%)` : ""}
+                </Typography>
+              )}
               {selectedRelationship.description && (
                 <Typography>
                   Description: {selectedRelationship.description}

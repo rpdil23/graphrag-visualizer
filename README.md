@@ -104,3 +104,21 @@ To load `.parquet` files automatically when the application starts, place your P
   - `public/artifacts/create_final_covariates.parquet`
 
 If the files are placed in the `public/artifacts` folder, the app will automatically load and display them on startup.
+
+### Loading Graphify Files
+
+GraphRAG Visualizer also fully supports visualizing [Graphify](https://github.com/Graphify-Labs/graphify) codebase knowledge graphs:
+
+- **Drop Zone**: Drag & drop `graph.json` (or loose `.json` / `.md` files) or use "Upload Folder" to upload your entire `graphify-out` directory.
+- **Auto-load Default**: Place your `graphify-out` output in `public/graphify-out/` to automatically load it on startup:
+  - `public/graphify-out/graph.json`
+  - `public/graphify-out/GRAPH_REPORT.md`
+  - `public/graphify-out/manifest.json`
+  - `public/graphify-out/.graphify_labels.json`
+- **Graphify Features**:
+  - **Color by Community**: Automatically clusters and colors nodes according to their module / community hub (with toggle between type and community coloring).
+  - **Directional AST Links**: Clear directional arrows for `calls`, `contains`, `imports`, `extends`, and `references`.
+  - **Interactive Search**: Search AST symbols, functions, classes, and source files via Fuse.js.
+  - **Data Tables**: Dedicated tables for Symbols / Nodes, Relationships / Edges, Communities, Files Manifest, and an interactive Architecture & God Nodes Report.
+  - **Multi-Source Switching**: If both GraphRAG and Graphify datasets are present, switch between them instantly.
+

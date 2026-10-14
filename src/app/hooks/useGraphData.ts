@@ -11,6 +11,105 @@ import {
   CustomLink,
   CustomNode,
 } from "../models/custom-graph-data";
+import { GraphifyGraph } from "../models/graphify";
+
+function buildGraphDataFromGraphify(
+  graphifyData: GraphifyGraph,
+  maxEntities: number,
+): CustomGraphData {
+  const rawNodes = graphifyData.nodes || [];
+  const rawLinks = graphifyData.links || [];
+
+  const degreeMap: Record<string, number> = {};
+  rawLinks.forEach((link) => {
+    degreeMap[link.source] = (degreeMap[link.source] || 0) + 1;
+    degreeMap[link.target] = (degreeMap[link.target] || 0) + 1;
+  });
+
+  let filteredNodes = rawNodes;
+  if (maxEntities > 0 && rawNodes.length > maxEntities) {
+    filteredNodes = [...rawNodes]
+      .sort((a, b) => {
+        const countA = a.degree ?? degreeMap[a.id] ?? 0;
+        const countB = b.degree ?? degreeMap[b.id] ?? 0;
+        return countB - countA;
+      })
+      .slice(0, maxEntities);
+  }
+
+  const nodesMap: { [key: string]: CustomNode } = {};
+  const nodes: CustomNode[] = filteredNodes.map((n) => {
+    const customNode: CustomNode = {
+      uuid: n.id,
+      id: n.id,
+      name: n.label || n.id,
+      title: n.label || n.id,
+      type: n.file_type || n.type || "code",
+      description: [
+        n.source_file
+          ? `${n.source_file}${n.source_location ? `:${n.source_location}` : ""}`
+          : "",
+        n.community_name ? `Community: ${n.community_name}` : "",
+      ]
+        .filter(Boolean)
+        .join(" | "),
+      community: n.community,
+      community_name: n.community_name,
+      source_file: n.source_file,
+      source_location: n.source_location,
+      file_type: n.file_type,
+      confidence: n.confidence,
+      degree: n.degree ?? degreeMap[n.id] ?? 0,
+      _callable: n._callable,
+      _callable_class: n._callable_class,
+      member_count: n.member_count,
+      neighbors: [],
+      links: [],
+    };
+    nodesMap[n.id] = customNode;
+    return customNode;
+  });
+
+  const links: CustomLink[] = [];
+  for (const link of rawLinks) {
+    if (!nodesMap[link.source] || !nodesMap[link.target]) {
+      continue;
+    }
+    const rel = link.relation || "related";
+    const customLink: CustomLink = {
+      source: link.source,
+      target: link.target,
+      type: rel,
+      relation: rel,
+      weight: link.weight ?? 1,
+      description: `${rel} (${link.confidence || "EXTRACTED"})${
+        link.source_file ? ` in ${link.source_file}` : ""
+      }`,
+      id: `${link.source}-${rel}-${link.target}`,
+      confidence: link.confidence,
+      confidence_score: link.confidence_score,
+      source_file: link.source_file,
+      source_location: link.source_location,
+      context: link.context,
+    };
+    links.push(customLink);
+  }
+
+  links.forEach((link) => {
+    const sourceNode = nodesMap[link.source as string];
+    const targetNode = nodesMap[link.target as string];
+    if (sourceNode && targetNode) {
+      if (!sourceNode.neighbors!.includes(targetNode))
+        sourceNode.neighbors!.push(targetNode);
+      if (!targetNode.neighbors!.includes(sourceNode))
+        targetNode.neighbors!.push(sourceNode);
+      if (!sourceNode.links!.includes(link)) sourceNode.links!.push(link);
+      if (!targetNode.links!.includes(link)) targetNode.links!.push(link);
+    }
+  });
+
+  return { nodes, links };
+}
 
 function buildGraphData(
   entities: Entity[],
@@ -315,10 +414,15 @@ const useGraphData = (
   includeCommunities: boolean,
   includeCovariates: boolean,
   maxEntities: number = 0,
+  dataSource: "graphrag" | "graphify" = "graphrag",
+  graphifyData?: GraphifyGraph | null,
 ) =>
   useMemo(
-    () =>
-      buildGraphData(
+    () => {
+      if (dataSource === "graphify" && graphifyData) {
+        return buildGraphDataFromGraphify(graphifyData, maxEntities);
+      }
+      return buildGraphData(
         entities,
         relationships,
         documents,
@@ -331,7 +435,8 @@ const useGraphData = (
         includeCommunities,
         includeCovariates,
         maxEntities,
-      ),
+      );
+    },
     [
       entities,
       relationships,
@@ -345,6 +450,8 @@ const useGraphData = (
       includeCommunities,
       includeCovariates,
       maxEntities,
+      dataSource,
+      graphifyData,
     ],
   );
 

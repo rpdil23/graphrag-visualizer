@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Chip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
@@ -22,8 +22,11 @@ const DropZone: React.FC<DropZoneProps> = ({
 
   const handleFolderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
-      const filesArray = Array.from(e.target.files).filter((file) =>
-        file.name.endsWith(".parquet"),
+      const filesArray = Array.from(e.target.files).filter(
+        (file) =>
+          file.name.endsWith(".parquet") ||
+          file.name.endsWith(".json") ||
+          file.name.endsWith(".md"),
       );
       if (onFolderSelect) {
         onFolderSelect(filesArray);
@@ -44,7 +47,7 @@ const DropZone: React.FC<DropZoneProps> = ({
           ? theme.palette.action.hover
           : theme.palette.background.default,
         color: theme.palette.text.primary,
-        minHeight: "160px",
+        minHeight: "170px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -66,19 +69,37 @@ const DropZone: React.FC<DropZoneProps> = ({
         {...({ webkitdirectory: "true", directory: "true" } as any)}
       />
 
-      <UploadFileIcon sx={{ fontSize: 40, color: theme.palette.primary.main, opacity: 0.8 }} />
+      <UploadFileIcon
+        sx={{ fontSize: 44, color: theme.palette.primary.main, opacity: 0.85 }}
+      />
 
       {isDragActive ? (
         <Typography variant="body1" sx={{ fontWeight: 500 }}>
-          Drop the parquet files here...
+          Drop files or folder here...
         </Typography>
       ) : (
         <>
-          <Typography variant="body1" sx={{ fontWeight: 500 }}>
-            Drag &amp; drop .parquet files here, or click to select files
+          <Typography variant="body1" sx={{ fontWeight: 600 }}>
+            Drag &amp; drop files or folder here, or click to browse
           </Typography>
+          <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", justifyContent: "center" }}>
+            <Chip
+              label="GraphRAG (.parquet)"
+              size="small"
+              color="primary"
+              variant="outlined"
+              sx={{ fontWeight: 500, fontSize: "0.75rem" }}
+            />
+            <Chip
+              label="Graphify (graph.json / graphify-out)"
+              size="small"
+              color="secondary"
+              variant="outlined"
+              sx={{ fontWeight: 500, fontSize: "0.75rem" }}
+            />
+          </Box>
           <Typography variant="caption" color="text.secondary">
-            Select loose files (entities, relationships, etc.) or choose an entire folder
+            Supports GraphRAG parquet tables or Graphify knowledge graph outputs (.json, .md)
           </Typography>
           <Box sx={{ display: "flex", gap: 1.5, mt: 0.5 }}>
             <Button

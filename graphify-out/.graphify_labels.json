@@ -1,1 +1,27 @@
-{"0": "package.json", "1": "DataTableContainer.tsx", "2": "dependencies", "3": "GraphViewer.tsx", "4": "GraphDataHandler.tsx", "5": "compilerOptions", "6": "react-table-config.d.ts", "7": "manifest.json", "8": "parquet-utils.ts", "9": "scripts", "10": "agent.ts", "11": "hyparquet.d.ts", "12": "declarations.d.ts", "13": "config-overrides.js", "14": "react-app-env.d.ts"}
+{
+  "0": "package.json",
+  "1": "DataTableContainer.tsx",
+  "2": "dependencies",
+  "3": "GraphViewer.tsx",
+  "4": "GraphDataHandler.tsx",
+  "5": "compilerOptions",
+  "6": "react-table-config.d.ts",
+  "7": "manifest.json",
+  "8": "parquet-utils.ts",
+  "9": "scripts",
+  "10": "GraphRAG Visualizer",
+  "11": "hyparquet.d.ts",
+  "12": "declarations.d.ts",
+  "13": "config-overrides.js",
+  "14": "react-app-env.d.ts",
+  "15": "AGENTS.md - Devmind Directives & Engineering Rules",
+  "16": "Code Structure & Boundaries",
+  "17": "diagram-design",
+  "18": "search.md",
+  "19": "search-docs.md",
+  "20": "search-knowledge.md",
+  "21": "todo.md",
+  "22": "devlog.md",
+  "23": "eod.md",
+  "24": "notes.md"
+}

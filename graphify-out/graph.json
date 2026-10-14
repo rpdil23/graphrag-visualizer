@@ -7,6 +7,19 @@
   },
   "nodes": [
     {
+      "id": "src_app_components_datatable_datatableprops",
+      "label": "DataTableProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "datatableprops",
+      "source_file": "src/app/components/DataTable.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "src_app_components_datatablecontainer_datatablecontainerprops",
       "label": "DataTableContainerProps",
       "_callable": true,
@@ -17,7 +30,7 @@
       "file_type": "code",
       "norm_label": "datatablecontainerprops",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L22"
+      "source_location": "L37"
     },
     {
       "id": "src_app_models_community_community",
@@ -82,6 +95,71 @@
       "file_type": "code",
       "norm_label": "entity",
       "source_file": "src/app/models/entity.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_app_models_graphify_graphifycommunity",
+      "label": "GraphifyCommunity",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifycommunity",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "src_app_models_graphify_graphifygraph",
+      "label": "GraphifyGraph",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifygraph",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_app_models_graphify_graphifylink",
+      "label": "GraphifyLink",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifylink",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "src_app_models_graphify_graphifymanifestitem",
+      "label": "GraphifyManifestItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifymanifestitem",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "src_app_models_graphify_graphifynode",
+      "label": "GraphifyNode",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifynode",
+      "source_file": "src/app/models/graphify.ts",
       "source_location": "L3"
     },
     {
@@ -173,7 +251,7 @@
       "file_type": "code",
       "norm_label": "coords",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L40"
+      "source_location": "L56"
     },
     {
       "id": "src_app_components_graphviewer_graphviewerprops",
@@ -186,7 +264,7 @@
       "file_type": "code",
       "norm_label": "graphviewerprops",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L46"
+      "source_location": "L62"
     },
     {
       "id": "src_app_components_searchdrawer_searchdrawerprops",
@@ -225,7 +303,7 @@
       "file_type": "code",
       "norm_label": "customgraphdata",
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L62"
+      "source_location": "L78"
     },
     {
       "id": "src_app_models_custom_graph_data_customlink",
@@ -238,7 +316,7 @@
       "file_type": "code",
       "norm_label": "customlink",
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L47"
+      "source_location": "L57"
     },
     {
       "id": "src_app_models_custom_graph_data_customnode",
@@ -267,19 +345,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_components_datatable_datatableprops",
-      "label": "DataTableProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "datatableprops",
-      "source_file": "src/app/components/DataTable.tsx",
-      "source_location": "L9"
-    },
-    {
       "id": "src_app_components_dropzone_dropzoneprops",
       "label": "DropZoneProps",
       "_callable": true,
@@ -290,7 +355,20 @@
       "file_type": "code",
       "norm_label": "dropzoneprops",
       "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L5"
+      "source_location": "L7"
+    },
+    {
+      "id": "src_app_components_graphreportview_graphreportviewprops",
+      "label": "GraphReportViewProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "graphreportviewprops",
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L18"
     },
     {
       "id": "src_react_table_config_d_cell",
@@ -410,12 +488,60 @@
       "source_location": "L3"
     },
     {
+      "id": "src_app_components_datatable_datatable",
+      "label": "DataTable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "datatable()",
+      "source_file": "src/app/components/DataTable.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_app_components_datatablecontainer_datatablecontainer",
+      "label": "DataTableContainer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "datatablecontainer()",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L56"
+    },
+    {
+      "id": "src_app_components_detaildrawer_detaildrawer",
+      "label": "DetailDrawer()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "detaildrawer()",
+      "source_file": "src/app/components/DetailDrawer.tsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "src_app_components_graphreportview_graphreportview",
+      "label": "GraphReportView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphreportview()",
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L25"
+    },
+    {
       "id": "src_app_api_agent_responsebody",
       "label": "responseBody()",
       "_callable": true,
       "_origin": "ast",
-      "community": 10,
-      "community_name": "agent.ts",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
       "file_type": "code",
       "norm_label": "responsebody()",
       "source_file": "src/app/api/agent.ts",
@@ -434,18 +560,6 @@
       "source_location": "L43"
     },
     {
-      "id": "src_app_components_detaildrawer_detaildrawer",
-      "label": "DetailDrawer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "detaildrawer()",
-      "source_file": "src/app/components/DetailDrawer.tsx",
-      "source_location": "L39"
-    },
-    {
       "id": "src_app_components_graphviewer_graphviewer",
       "label": "GraphViewer()",
       "_callable": true,
@@ -455,7 +569,7 @@
       "file_type": "code",
       "norm_label": "graphviewer()",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L71"
+      "source_location": "L88"
     },
     {
       "id": "src_app_components_searchdrawer_searchdrawer",
@@ -470,28 +584,52 @@
       "source_location": "L34"
     },
     {
-      "id": "src_app_components_datatable_datatable",
-      "label": "DataTable()",
+      "id": "src_app_hooks_usegraphforces_usegraphforces",
+      "label": "useGraphForces()",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
       "file_type": "code",
-      "norm_label": "datatable()",
-      "source_file": "src/app/components/DataTable.tsx",
-      "source_location": "L14"
+      "norm_label": "usegraphforces()",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L7"
     },
     {
-      "id": "src_app_components_datatablecontainer_datatablecontainer",
-      "label": "DataTableContainer()",
+      "id": "src_app_utils_sanitizegraphdata_normalizelinkendpoint",
+      "label": "normalizeLinkEndpoint()",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
       "file_type": "code",
-      "norm_label": "datatablecontainer()",
-      "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L44"
+      "norm_label": "normalizelinkendpoint()",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "label": "sanitizeGraphData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "sanitizegraphdata()",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L39"
+    },
+    {
+      "id": "src_app_utils_sanitizegraphdata_stripkeys",
+      "label": "stripKeys()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "stripkeys()",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L24"
     },
     {
       "id": "src_app_components_dropzone_dropzone",
@@ -503,7 +641,19 @@
       "file_type": "code",
       "norm_label": "dropzone()",
       "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L11"
+      "source_location": "L14"
+    },
+    {
+      "id": "src_app_components_graphdatahandler_gettabindexfrompathname",
+      "label": "getTabIndexFromPathname()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "gettabindexfrompathname()",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L22"
     },
     {
       "id": "src_app_components_graphdatahandler_graphdatahandler",
@@ -515,7 +665,7 @@
       "file_type": "code",
       "norm_label": "graphdatahandler()",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L13"
+      "source_location": "L33"
     },
     {
       "id": "src_app_components_introduction_introduction",
@@ -530,6 +680,18 @@
       "source_location": "L16"
     },
     {
+      "id": "src_app_hooks_usefilehandler_extractcommunities",
+      "label": "extractCommunities()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "extractcommunities()",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L45"
+    },
+    {
       "id": "src_app_hooks_usefilehandler_usefilehandler",
       "label": "useFileHandler()",
       "_callable": true,
@@ -539,7 +701,31 @@
       "file_type": "code",
       "norm_label": "usefilehandler()",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L38"
+      "source_location": "L81"
+    },
+    {
+      "id": "src_app_hooks_usegraphdata_buildgraphdata",
+      "label": "buildGraphData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "buildgraphdata()",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L114"
+    },
+    {
+      "id": "src_app_hooks_usegraphdata_buildgraphdatafromgraphify",
+      "label": "buildGraphDataFromGraphify()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "buildgraphdatafromgraphify()",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L16"
     },
     {
       "id": "src_app_hooks_usegraphdata_usegraphdata",
@@ -551,7 +737,7 @@
       "file_type": "code",
       "norm_label": "usegraphdata()",
       "source_file": "src/app/hooks/useGraphData.ts",
-      "source_location": "L11"
+      "source_location": "L404"
     },
     {
       "id": "src_app_layout_app_app",
@@ -669,7 +855,7 @@
       "file_type": "code",
       "norm_label": "browserslist",
       "source_file": "package.json",
-      "source_location": "L51"
+      "source_location": "L52"
     },
     {
       "id": "package_browserslist_development",
@@ -680,7 +866,7 @@
       "file_type": "code",
       "norm_label": "development",
       "source_file": "package.json",
-      "source_location": "L57"
+      "source_location": "L58"
     },
     {
       "id": "package_browserslist_production",
@@ -691,7 +877,7 @@
       "file_type": "code",
       "norm_label": "production",
       "source_file": "package.json",
-      "source_location": "L52"
+      "source_location": "L53"
     },
     {
       "id": "package_devdependencies",
@@ -702,7 +888,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L63"
+      "source_location": "L64"
     },
     {
       "id": "package_devdependencies_gh_pages",
@@ -713,7 +899,18 @@
       "file_type": "code",
       "norm_label": "gh-pages",
       "source_file": "package.json",
-      "source_location": "L66"
+      "source_location": "L68"
+    },
+    {
+      "id": "package_devdependencies_types_d3_force",
+      "label": "@types/d3-force",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/d3-force",
+      "source_file": "package.json",
+      "source_location": "L65"
     },
     {
       "id": "package_devdependencies_types_react_table",
@@ -724,7 +921,7 @@
       "file_type": "code",
       "norm_label": "@types/react-table",
       "source_file": "package.json",
-      "source_location": "L64"
+      "source_location": "L66"
     },
     {
       "id": "package_devdependencies_types_three",
@@ -735,7 +932,7 @@
       "file_type": "code",
       "norm_label": "@types/three",
       "source_file": "package.json",
-      "source_location": "L65"
+      "source_location": "L67"
     },
     {
       "id": "package_eslintconfig",
@@ -746,7 +943,7 @@
       "file_type": "code",
       "norm_label": "eslintconfig",
       "source_file": "package.json",
-      "source_location": "L45"
+      "source_location": "L46"
     },
     {
       "id": "package_eslintconfig_extends",
@@ -757,7 +954,7 @@
       "file_type": "code",
       "norm_label": "extends",
       "source_file": "package.json",
-      "source_location": "L46"
+      "source_location": "L47"
     },
     {
       "id": "package_homepage",
@@ -845,7 +1042,7 @@
       "file_type": "concept",
       "norm_label": "gh-pages",
       "source_file": "package.json",
-      "source_location": "L66"
+      "source_location": "L68"
     },
     {
       "id": "ref_react_app",
@@ -856,7 +1053,7 @@
       "file_type": "concept",
       "norm_label": "react-app",
       "source_file": "package.json",
-      "source_location": "L46"
+      "source_location": "L47"
     },
     {
       "id": "ref_react_app_jest",
@@ -867,7 +1064,7 @@
       "file_type": "concept",
       "norm_label": "react-app/jest",
       "source_file": "package.json",
-      "source_location": "L46"
+      "source_location": "L47"
     },
     {
       "id": "ref_react_app_rewired",
@@ -878,7 +1075,7 @@
       "file_type": "concept",
       "norm_label": "react-app-rewired",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "ref_react_dom",
@@ -889,7 +1086,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "ref_react_dropzone",
@@ -900,7 +1097,7 @@
       "file_type": "concept",
       "norm_label": "react-dropzone",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "ref_react_scripts",
@@ -911,7 +1108,7 @@
       "file_type": "concept",
       "norm_label": "react-scripts",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "ref_testing_library_jest_dom",
@@ -945,6 +1142,17 @@
       "norm_label": "@testing-library/user-event",
       "source_file": "package.json",
       "source_location": "L13"
+    },
+    {
+      "id": "ref_types_d3_force",
+      "label": "@types/d3-force",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@types/d3-force",
+      "source_file": "package.json",
+      "source_location": "L65"
     },
     {
       "id": "ref_types_jest",
@@ -999,7 +1207,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-table",
       "source_file": "package.json",
-      "source_location": "L64"
+      "source_location": "L66"
     },
     {
       "id": "ref_types_three",
@@ -1010,7 +1218,7 @@
       "file_type": "concept",
       "norm_label": "@types/three",
       "source_file": "package.json",
-      "source_location": "L65"
+      "source_location": "L67"
     },
     {
       "id": "ref_typescript",
@@ -1021,7 +1229,18 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L35"
+    },
+    {
+      "id": "src_app_components_datatable",
+      "label": "DataTable.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "datatable.tsx",
+      "source_file": "src/app/components/DataTable.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_app_components_datatablecontainer",
@@ -1065,7 +1284,7 @@
       "file_type": "code",
       "norm_label": "basefilenames",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L12"
+      "source_location": "L19"
     },
     {
       "id": "src_app_hooks_usefilehandler_basemapping",
@@ -1076,7 +1295,7 @@
       "file_type": "code",
       "norm_label": "basemapping",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L22"
+      "source_location": "L29"
     },
     {
       "id": "src_app_hooks_usefilehandler_fileschemas",
@@ -1087,7 +1306,7 @@
       "file_type": "code",
       "norm_label": "fileschemas",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L32"
+      "source_location": "L39"
     },
     {
       "id": "src_app_hooks_usegraphdata",
@@ -1222,6 +1441,61 @@
       "source_location": "L12"
     },
     {
+      "id": "src_app_models_graphify",
+      "label": "graphify.ts",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphify.ts",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_models_graphify_graphifycommunitycolumns",
+      "label": "graphifyCommunityColumns",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifycommunitycolumns",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L135"
+    },
+    {
+      "id": "src_app_models_graphify_graphifylinkcolumns",
+      "label": "graphifyLinkColumns",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifylinkcolumns",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L104"
+    },
+    {
+      "id": "src_app_models_graphify_graphifymanifestcolumns",
+      "label": "graphifyManifestColumns",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifymanifestcolumns",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L158"
+    },
+    {
+      "id": "src_app_models_graphify_graphifynodecolumns",
+      "label": "graphifyNodeColumns",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "DataTableContainer.tsx",
+      "file_type": "code",
+      "norm_label": "graphifynodecolumns",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L69"
+    },
+    {
       "id": "src_app_models_relationship",
       "label": "relationship.ts",
       "_origin": "ast",
@@ -1274,73 +1548,163 @@
       "file_type": "concept",
       "norm_label": "material-react-table",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
-      "id": "src_app_api_agent",
-      "label": "agent.ts",
+      "id": "readme",
+      "label": "README.md",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "code",
-      "norm_label": "agent.ts",
-      "source_file": "src/app/api/agent.ts",
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
       "source_location": "L1"
     },
     {
-      "id": "src_app_api_agent_agent",
-      "label": "agent",
+      "id": "readme_developer_instructions",
+      "label": "Developer Instructions",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "code",
-      "norm_label": "agent",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L64"
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "developer instructions",
+      "source_file": "README.md",
+      "source_location": "L56"
     },
     {
-      "id": "src_app_api_agent_requests",
-      "label": "requests",
+      "id": "readme_features",
+      "label": "Features",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "code",
-      "norm_label": "requests",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L47"
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "features",
+      "source_file": "README.md",
+      "source_location": "L17"
     },
     {
-      "id": "src_app_api_agent_search",
-      "label": "Search",
+      "id": "readme_graph_data_model",
+      "label": "Graph Data Model",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "code",
-      "norm_label": "search",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L55"
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graph data model",
+      "source_file": "README.md",
+      "source_location": "L30"
     },
     {
-      "id": "src_app_api_agent_status",
-      "label": "Status",
+      "id": "readme_graphrag_visualizer",
+      "label": "GraphRAG Visualizer",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "code",
-      "norm_label": "status",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L60"
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graphrag visualizer",
+      "source_file": "README.md",
+      "source_location": "L1"
     },
     {
-      "id": "ref_axios",
-      "label": "axios",
+      "id": "readme_important_note",
+      "label": "Important Note",
       "_origin": "ast",
       "community": 10,
-      "community_name": "agent.ts",
-      "file_type": "concept",
-      "norm_label": "axios",
-      "source_file": "package.json",
-      "source_location": "L18"
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "important note",
+      "source_file": "README.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "readme_loading_graphify_files",
+      "label": "Loading Graphify Files",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "loading graphify files",
+      "source_file": "README.md",
+      "source_location": "L108"
+    },
+    {
+      "id": "readme_loading_parquet_files",
+      "label": "Loading Parquet Files",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "loading parquet files",
+      "source_file": "README.md",
+      "source_location": "L84"
+    },
+    {
+      "id": "readme_nodes",
+      "label": "Nodes",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "nodes",
+      "source_file": "README.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "readme_overview",
+      "label": "Overview",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "overview",
+      "source_file": "README.md",
+      "source_location": "L8"
+    },
+    {
+      "id": "readme_relationships",
+      "label": "Relationships",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "relationships",
+      "source_file": "README.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "readme_setting_up_the_project",
+      "label": "Setting Up the Project",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "setting up the project",
+      "source_file": "README.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "readme_using_the_search_functionality",
+      "label": "Using the Search Functionality",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "GraphRAG Visualizer",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "using the search functionality",
+      "source_file": "README.md",
+      "source_location": "L24"
     },
     {
       "id": "src_hyparquet_d",
@@ -1398,6 +1762,298 @@
       "source_location": "L1"
     },
     {
+      "id": "agents",
+      "label": "AGENTS.md",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "agents.md",
+      "source_file": "AGENTS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_agents_md_devmind_directives_engineering_rules",
+      "label": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "agents.md - devmind directives & engineering rules",
+      "source_file": "AGENTS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_architecture_readme_sync",
+      "label": "Architecture README sync",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "architecture readme sync",
+      "source_file": "AGENTS.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "agents_caveman_response_style",
+      "label": "Caveman response style",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "caveman response style",
+      "source_file": "AGENTS.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "agents_code_structure",
+      "label": "Code Structure",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "code structure",
+      "source_file": "AGENTS.md",
+      "source_location": "L36"
+    },
+    {
+      "id": "agents_diagram_design",
+      "label": "diagram-design",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagram-design",
+      "source_file": "AGENTS.md",
+      "source_location": "L23"
+    },
+    {
+      "id": "agents_graphify",
+      "label": "graphify",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "AGENTS.md - Devmind Directives & Engineering Rules",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graphify",
+      "source_file": "AGENTS.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "agents_rules_code_structure",
+      "label": "code-structure.md",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Code Structure & Boundaries",
+      "file_type": "document",
+      "frontmatter": {
+        "trigger": "always_on",
+        "description": "Architectural layers, oversized files, size limits, and verification commands."
+      },
+      "node_kind": "page",
+      "norm_label": "code-structure.md",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_rules_code_structure_2_size_limits",
+      "label": "2. Size Limits",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Code Structure & Boundaries",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. size limits",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "agents_rules_code_structure_3_oversized_files_grandfathered",
+      "label": "3. Oversized Files (Grandfathered)",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Code Structure & Boundaries",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. oversized files (grandfathered)",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L24"
+    },
+    {
+      "id": "agents_rules_code_structure_4_verification_steps",
+      "label": "4. Verification Steps",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Code Structure & Boundaries",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. verification steps",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "agents_rules_code_structure_code_structure_boundaries",
+      "label": "Code Structure & Boundaries",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "Code Structure & Boundaries",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "code structure & boundaries",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "agents_skills_diagram_design_skill",
+      "label": "SKILL.md",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "diagram-design",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "skill.md",
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_skills_diagram_design_skill_animation_rules_pure_inline_svg",
+      "label": "Animation Rules (Pure Inline SVG)",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "diagram-design",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "animation rules (pure inline svg)",
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "agents_skills_diagram_design_skill_diagram_design",
+      "label": "diagram-design",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "diagram-design",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagram-design",
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "agents_skills_diagram_design_skill_diagram_theme",
+      "label": "Diagram theme",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "diagram-design",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagram theme",
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "claude_commands_search",
+      "label": "search.md",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "search.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "search.md",
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_search_answer_format",
+      "label": "Answer format",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "search.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "answer format",
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "claude_commands_search_rules",
+      "label": "Rules",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "search.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "rules",
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "claude_commands_search_strategy",
+      "label": "Strategy",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "search.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "strategy",
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "claude_commands_search_docs",
+      "label": "search-docs.md",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "search-docs.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "search-docs.md",
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_search_docs_answer_format",
+      "label": "Answer format",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "search-docs.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "answer format",
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "claude_commands_search_docs_rules",
+      "label": "Rules",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "search-docs.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "rules",
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "claude_commands_search_docs_strategy",
+      "label": "Strategy",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "search-docs.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "strategy",
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L5"
+    },
+    {
       "id": "package_dependencies",
       "label": "dependencies",
       "_origin": "ast",
@@ -1418,6 +2074,17 @@
       "norm_label": "axios",
       "source_file": "package.json",
       "source_location": "L18"
+    },
+    {
+      "id": "package_dependencies_d3_force",
+      "label": "d3-force",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "d3-force",
+      "source_file": "package.json",
+      "source_location": "L19"
     },
     {
       "id": "package_dependencies_emotion_react",
@@ -1450,7 +2117,7 @@
       "file_type": "code",
       "norm_label": "fuse.js",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_hyparquet",
@@ -1461,7 +2128,7 @@
       "file_type": "code",
       "norm_label": "hyparquet",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_material_react_table",
@@ -1472,7 +2139,7 @@
       "file_type": "code",
       "norm_label": "material-react-table",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_mui_icons_material",
@@ -1505,7 +2172,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_react_app_rewired",
@@ -1516,7 +2183,7 @@
       "file_type": "code",
       "norm_label": "react-app-rewired",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -1527,7 +2194,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "package_dependencies_react_dropzone",
@@ -1538,7 +2205,7 @@
       "file_type": "code",
       "norm_label": "react-dropzone",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "package_dependencies_react_force_graph_2d",
@@ -1549,7 +2216,7 @@
       "file_type": "code",
       "norm_label": "react-force-graph-2d",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_dependencies_react_force_graph_3d",
@@ -1560,7 +2227,7 @@
       "file_type": "code",
       "norm_label": "react-force-graph-3d",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_dependencies_react_ga4",
@@ -1571,7 +2238,7 @@
       "file_type": "code",
       "norm_label": "react-ga4",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "package_dependencies_react_router_dom",
@@ -1582,7 +2249,7 @@
       "file_type": "code",
       "norm_label": "react-router-dom",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "package_dependencies_react_scripts",
@@ -1593,7 +2260,7 @@
       "file_type": "code",
       "norm_label": "react-scripts",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "package_dependencies_react_table",
@@ -1604,7 +2271,7 @@
       "file_type": "code",
       "norm_label": "react-table",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "package_dependencies_testing_library_jest_dom",
@@ -1648,7 +2315,7 @@
       "file_type": "code",
       "norm_label": "three",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "package_dependencies_three_spritetext",
@@ -1659,7 +2326,7 @@
       "file_type": "code",
       "norm_label": "three-spritetext",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L34"
     },
     {
       "id": "package_dependencies_types_jest",
@@ -1714,7 +2381,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L35"
     },
     {
       "id": "package_dependencies_web_vitals",
@@ -1725,7 +2392,205 @@
       "file_type": "code",
       "norm_label": "web-vitals",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L36"
+    },
+    {
+      "id": "claude_commands_search_knowledge",
+      "label": "search-knowledge.md",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "search-knowledge.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "search-knowledge.md",
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_search_knowledge_answer_format",
+      "label": "Answer format",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "search-knowledge.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "answer format",
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "claude_commands_search_knowledge_rules",
+      "label": "Rules",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "search-knowledge.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "rules",
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "claude_commands_search_knowledge_strategy",
+      "label": "Strategy",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "search-knowledge.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "strategy",
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "claude_commands_todo",
+      "label": "todo.md",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "todo.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "todo.md",
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_todo_commands",
+      "label": "Commands",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "todo.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "commands",
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "claude_commands_todo_instructions",
+      "label": "Instructions",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "todo.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "instructions",
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "claude_commands_todo_storage_format",
+      "label": "Storage format",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "todo.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "storage format",
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L14"
+    },
+    {
+      "id": "claude_commands_devlog",
+      "label": "devlog.md",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "devlog.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "devlog.md",
+      "source_file": ".claude/commands/devlog.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_eod",
+      "label": "eod.md",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "eod.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "eod.md",
+      "source_file": ".claude/commands/eod.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_commands_notes",
+      "label": "notes.md",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "notes.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "notes.md",
+      "source_file": ".claude/commands/notes.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "react_force_graph_3d",
+      "label": "react-force-graph-3d",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "react-force-graph-3d",
+      "source_file": "react-force-graph-3d"
+    },
+    {
+      "id": "src_app_api_agent",
+      "label": "agent.ts",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "agent.ts",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_api_agent_agent",
+      "label": "agent",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "agent",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "src_app_api_agent_requests",
+      "label": "requests",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "requests",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "src_app_api_agent_search",
+      "label": "Search",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "search",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_app_api_agent_status",
+      "label": "Status",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "status",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L60"
     },
     {
       "id": "src_app_components_apisearchdrawer",
@@ -1750,6 +2615,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_app_components_graphviewer_forcegraph3d",
+      "label": "ForceGraph3D",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "forcegraph3d",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L54"
+    },
+    {
       "id": "src_app_components_searchdrawer",
       "label": "SearchDrawer.tsx",
       "_origin": "ast",
@@ -1758,6 +2634,17 @@
       "file_type": "code",
       "norm_label": "searchdrawer.tsx",
       "source_file": "src/app/components/SearchDrawer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_hooks_usegraphforces",
+      "label": "useGraphForces.ts",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "usegraphforces.ts",
+      "source_file": "src/app/hooks/useGraphForces.ts",
       "source_location": "L1"
     },
     {
@@ -1780,7 +2667,7 @@
       "file_type": "code",
       "norm_label": "customlinkcolumns",
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L184"
+      "source_location": "L219"
     },
     {
       "id": "src_app_models_custom_graph_data_customnodecolumns",
@@ -1791,7 +2678,7 @@
       "file_type": "code",
       "norm_label": "customnodecolumns",
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L68"
+      "source_location": "L84"
     },
     {
       "id": "src_app_models_search_result",
@@ -1805,6 +2692,61 @@
       "source_location": "L1"
     },
     {
+      "id": "src_app_utils_sanitizegraphdata",
+      "label": "sanitizeGraphData.ts",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "sanitizegraphdata.ts",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_utils_sanitizegraphdata_force_graph_link_keys",
+      "label": "FORCE_GRAPH_LINK_KEYS",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "force_graph_link_keys",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_app_utils_sanitizegraphdata_force_graph_node_keys",
+      "label": "FORCE_GRAPH_NODE_KEYS",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "code",
+      "norm_label": "force_graph_node_keys",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "ref_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "concept",
+      "norm_label": "axios",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "ref_d3_force",
+      "label": "d3-force",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "GraphViewer.tsx",
+      "file_type": "concept",
+      "norm_label": "d3-force",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
       "id": "ref_fuse_js",
       "label": "fuse.js",
       "_origin": "ast",
@@ -1813,18 +2755,7 @@
       "file_type": "concept",
       "norm_label": "fuse.js",
       "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "ref_mui_icons_material",
-      "label": "@mui/icons-material",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "concept",
-      "norm_label": "@mui/icons-material",
-      "source_file": "package.json",
-      "source_location": "L9"
+      "source_location": "L20"
     },
     {
       "id": "ref_react_force_graph_2d",
@@ -1835,7 +2766,7 @@
       "file_type": "concept",
       "norm_label": "react-force-graph-2d",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "ref_react_force_graph_3d",
@@ -1846,7 +2777,7 @@
       "file_type": "concept",
       "norm_label": "react-force-graph-3d",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "ref_three",
@@ -1857,7 +2788,7 @@
       "file_type": "concept",
       "norm_label": "three",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "ref_three_spritetext",
@@ -1868,7 +2799,7 @@
       "file_type": "concept",
       "norm_label": "three-spritetext",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L34"
     },
     {
       "id": "web_vitals",
@@ -1880,17 +2811,6 @@
       "file_type": "code",
       "norm_label": "web-vitals",
       "source_file": "web-vitals"
-    },
-    {
-      "id": "src_app_components_datatable",
-      "label": "DataTable.tsx",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "datatable.tsx",
-      "source_file": "src/app/components/DataTable.tsx",
-      "source_location": "L1"
     },
     {
       "id": "src_app_components_dropzone",
@@ -1912,6 +2832,39 @@
       "file_type": "code",
       "norm_label": "graphdatahandler.tsx",
       "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_components_graphdatahandler_datatablecontainer",
+      "label": "DataTableContainer",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "datatablecontainer",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_app_components_graphdatahandler_graphviewer",
+      "label": "GraphViewer",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "graphviewer",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_app_components_graphreportview",
+      "label": "GraphReportView.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "graphreportview.tsx",
+      "source_file": "src/app/components/GraphReportView.tsx",
       "source_location": "L1"
     },
     {
@@ -1970,6 +2923,17 @@
       "source_location": "L1"
     },
     {
+      "id": "ref_mui_icons_material",
+      "label": "@mui/icons-material",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "concept",
+      "norm_label": "@mui/icons-material",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
       "id": "ref_mui_material",
       "label": "@mui/material",
       "_origin": "ast",
@@ -1989,7 +2953,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "ref_react_ga4",
@@ -2000,7 +2964,7 @@
       "file_type": "concept",
       "norm_label": "react-ga4",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "ref_react_router_dom",
@@ -2011,7 +2975,7 @@
       "file_type": "concept",
       "norm_label": "react-router-dom",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "ref_web_vitals",
@@ -2022,7 +2986,19 @@
       "file_type": "concept",
       "norm_label": "web-vitals",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L36"
+    },
+    {
+      "id": "agents_rules_code_structure_1_layer_boundaries",
+      "label": "1. Layer Boundaries",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. layer boundaries",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L8"
     },
     {
       "id": "tsconfig",
@@ -2253,7 +3229,7 @@
       "file_type": "concept",
       "norm_label": "react-table",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "public_manifest",
@@ -2374,7 +3350,7 @@
       "file_type": "concept",
       "norm_label": "hyparquet",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "package_scripts",
@@ -2385,7 +3361,7 @@
       "file_type": "code",
       "norm_label": "scripts",
       "source_file": "package.json",
-      "source_location": "L37"
+      "source_location": "L38"
     },
     {
       "id": "package_scripts_build",
@@ -2396,7 +3372,7 @@
       "file_type": "code",
       "norm_label": "build",
       "source_file": "package.json",
-      "source_location": "L41"
+      "source_location": "L42"
     },
     {
       "id": "package_scripts_deploy",
@@ -2407,7 +3383,7 @@
       "file_type": "code",
       "norm_label": "deploy",
       "source_file": "package.json",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "package_scripts_eject",
@@ -2418,7 +3394,7 @@
       "file_type": "code",
       "norm_label": "eject",
       "source_file": "package.json",
-      "source_location": "L43"
+      "source_location": "L44"
     },
     {
       "id": "package_scripts_predeploy",
@@ -2429,7 +3405,7 @@
       "file_type": "code",
       "norm_label": "predeploy",
       "source_file": "package.json",
-      "source_location": "L38"
+      "source_location": "L39"
     },
     {
       "id": "package_scripts_start",
@@ -2440,7 +3416,7 @@
       "file_type": "code",
       "norm_label": "start",
       "source_file": "package.json",
-      "source_location": "L40"
+      "source_location": "L41"
     },
     {
       "id": "package_scripts_test",
@@ -2451,7 +3427,7 @@
       "file_type": "code",
       "norm_label": "test",
       "source_file": "package.json",
-      "source_location": "L42"
+      "source_location": "L43"
     },
     {
       "id": "ref_types_d_ts",
@@ -2486,7 +3462,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L119",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer_datatablecontainer",
+      "target": "src_app_components_graphreportview_graphreportview",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -2498,7 +3486,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/DetailDrawer.tsx",
-      "source_location": "L273",
+      "source_location": "L306",
       "weight": 1.0
     },
     {
@@ -2510,7 +3498,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L152",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -2522,31 +3510,43 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L153",
+      "source_location": "L229",
       "weight": 1.0
     },
     {
       "source": "src_app_components_graphdatahandler_graphdatahandler",
-      "target": "src_app_components_graphviewer_graphviewer",
+      "target": "src_app_components_graphdatahandler_graphviewer",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L169",
+      "source_location": "L260",
       "weight": 1.0
     },
     {
       "source": "src_app_components_graphdatahandler_graphdatahandler",
-      "target": "src_app_components_datatablecontainer_datatablecontainer",
+      "target": "src_app_components_graphdatahandler_datatablecontainer",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L204",
+      "source_location": "L312",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler_graphdatahandler",
+      "target": "src_app_components_graphdatahandler_gettabindexfrompathname",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -2558,7 +3558,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L45",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -2570,7 +3570,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L47",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -2582,7 +3582,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L751",
+      "source_location": "L1003",
       "weight": 1.0
     },
     {
@@ -2594,7 +3594,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L762",
+      "source_location": "L1014",
       "weight": 1.0
     },
     {
@@ -2606,7 +3606,43 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L775",
+      "source_location": "L1027",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer_graphviewer",
+      "target": "src_app_components_graphviewer_forcegraph3d",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L1136",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer_graphviewer",
+      "target": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler_usefilehandler",
+      "target": "src_app_hooks_usefilehandler_extractcommunities",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L203",
       "weight": 1.0
     },
     {
@@ -2618,7 +3654,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L83",
+      "source_location": "L236",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata_usegraphdata",
+      "target": "src_app_hooks_usegraphdata_buildgraphdatafromgraphify",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L423",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata_usegraphdata",
+      "target": "src_app_hooks_usegraphdata_buildgraphdata",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -2666,7 +3726,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/utils/parquet-utils.ts",
-      "source_location": "L44",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_stripkeys",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_normalizelinkendpoint",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -2702,7 +3786,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L35",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -2714,7 +3798,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L36",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -2726,7 +3810,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L37",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -2738,7 +3822,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L38",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -2750,7 +3834,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L39",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -2762,7 +3846,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L40",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -2774,7 +3858,55 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L41",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer_datatablecontainerprops",
+      "target": "src_app_models_graphify_graphifynode",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer_datatablecontainerprops",
+      "target": "src_app_models_graphify_graphifylink",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer_datatablecontainerprops",
+      "target": "src_app_models_graphify_graphifycommunity",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer_datatablecontainerprops",
+      "target": "src_app_models_graphify_graphifymanifestitem",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -2810,7 +3942,7 @@
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L47",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -2850,6 +3982,45 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_components_graphdatahandler_datatablecontainer",
+      "target": "src_app_components_datatablecontainer",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "deferred": true,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler_graphviewer",
+      "target": "src_app_components_graphviewer",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "deferred": true,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer_forcegraph3d",
+      "target": "ref_react_force_graph_3d",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "deferred": true,
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
       "source": "src_reportwebvitals_reportwebvitals",
       "target": "ref_web_vitals",
       "relation": "imports_from",
@@ -2871,7 +4042,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -2883,7 +4054,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -2996,7 +4167,7 @@
     },
     {
       "source": "package",
-      "target": "ref_fuse_js",
+      "target": "ref_d3_force",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3008,7 +4179,7 @@
     },
     {
       "source": "package",
-      "target": "ref_hyparquet",
+      "target": "ref_fuse_js",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3020,7 +4191,7 @@
     },
     {
       "source": "package",
-      "target": "ref_material_react_table",
+      "target": "ref_hyparquet",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3032,7 +4203,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_material_react_table",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3044,7 +4215,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_app_rewired",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3056,7 +4227,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_react_app_rewired",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3068,7 +4239,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dropzone",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3080,7 +4251,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_force_graph_2d",
+      "target": "ref_react_dropzone",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3092,7 +4263,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_force_graph_3d",
+      "target": "ref_react_force_graph_2d",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3104,7 +4275,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_ga4",
+      "target": "ref_react_force_graph_3d",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3116,7 +4287,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_router_dom",
+      "target": "ref_react_ga4",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3128,7 +4299,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_scripts",
+      "target": "ref_react_router_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3140,7 +4311,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_table",
+      "target": "ref_react_scripts",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3152,7 +4323,7 @@
     },
     {
       "source": "package",
-      "target": "ref_three",
+      "target": "ref_react_table",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3164,7 +4335,7 @@
     },
     {
       "source": "package",
-      "target": "ref_three_spritetext",
+      "target": "ref_three",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3176,7 +4347,7 @@
     },
     {
       "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_three_spritetext",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3188,7 +4359,7 @@
     },
     {
       "source": "package",
-      "target": "ref_web_vitals",
+      "target": "ref_typescript",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3200,19 +4371,19 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react_table",
+      "target": "ref_web_vitals",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L64",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
       "source": "package",
-      "target": "ref_types_three",
+      "target": "ref_types_d3_force",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3224,7 +4395,7 @@
     },
     {
       "source": "package",
-      "target": "ref_gh_pages",
+      "target": "ref_types_react_table",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3232,6 +4403,30 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_three",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_gh_pages",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -3291,7 +4486,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L10",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_components_graphreportview_graphreportview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -3303,7 +4510,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L11",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3315,7 +4522,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L11",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3327,7 +4534,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L12",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3339,7 +4546,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L12",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3351,7 +4558,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -3363,7 +4570,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -3375,7 +4582,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L14",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -3387,7 +4594,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L14",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -3399,7 +4606,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L15",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3411,7 +4618,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L15",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3423,7 +4630,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L16",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3435,7 +4642,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L16",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3447,7 +4654,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L20",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3459,7 +4666,103 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L20",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifycommunity",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifycommunitycolumns",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifylink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifylinkcolumns",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifymanifestcolumns",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifymanifestitem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifynode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify_graphifynodecolumns",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -3608,30 +4911,6 @@
     },
     {
       "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_datatablecontainer_datatablecontainer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_graphviewer_graphviewer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
       "target": "src_app_components_dropzone_dropzone",
       "relation": "imports",
       "_origin": "ast",
@@ -3639,7 +4918,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L6",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -3651,7 +4930,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L7",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -3663,7 +4942,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L8",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -3675,67 +4954,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_searchdrawer_searchdrawer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L33",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_detaildrawer_detaildrawer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_models_search_result_searchresult",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_api_agent_agent",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L36",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_apisearchdrawer_apisearchdrawer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L37",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3747,7 +4966,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L4",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -3759,7 +4978,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L4",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -3771,7 +4990,79 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L4",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_searchdrawer_searchdrawer",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_detaildrawer_detaildrawer",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_models_search_result_searchresult",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_api_agent_agent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_apisearchdrawer_apisearchdrawer",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -3808,6 +5099,66 @@
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
       "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify_graphifycommunity",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify_graphifygraph",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify_graphifylink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify_graphifymanifestitem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify_graphifynode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -3892,6 +5243,18 @@
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata",
+      "target": "src_app_models_graphify_graphifygraph",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -4015,6 +5378,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "src_app_models_custom_graph_data_customgraphdata",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "src_app_models_custom_graph_data_customnode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_layout_app",
       "target": "src_app_components_graphdatahandler_graphdatahandler",
       "relation": "imports",
@@ -4036,6 +5423,42 @@
       "context": "import",
       "source_file": "src/app/models/custom-graph-data.ts",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_models_custom_graph_data_customgraphdata",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_models_custom_graph_data_customlink",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_models_custom_graph_data_customnode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -4179,60 +5602,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_entity",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_relationship",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_document",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_text_unit",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DataTableContainer.tsx",
       "source_location": "L14",
       "weight": 1.0
     },
     {
       "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_community",
+      "target": "src_app_components_graphreportview",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4244,7 +5619,7 @@
     },
     {
       "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_community_report",
+      "target": "src_app_models_entity",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4252,6 +5627,42 @@
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
       "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_relationship",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_document",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_text_unit",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -4268,7 +5679,7 @@
     },
     {
       "source": "src_app_components_datatablecontainer",
-      "target": "src_app_models_covariate",
+      "target": "src_app_models_community",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4276,6 +5687,42 @@
       "context": "import",
       "source_file": "src/app/components/DataTableContainer.tsx",
       "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_community_report",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_covariate",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_datatablecontainer",
+      "target": "src_app_models_graphify",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DataTableContainer.tsx",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -4447,6 +5894,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_components_dropzone",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/DropZone.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_components_graphdatahandler",
       "target": "ref_react",
       "relation": "imports_from",
@@ -4460,14 +5919,62 @@
     },
     {
       "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_datatablecontainer",
+      "target": "ref_react_dropzone",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_dropzone",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_introduction",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_hooks_usefilehandler",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_hooks_usegraphdata",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -4479,7 +5986,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L11",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -4496,7 +6003,7 @@
     },
     {
       "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_graphviewer",
+      "target": "ref_mui_material",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4507,75 +6014,39 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_components_graphdatahandler",
+      "source": "src_app_components_graphreportview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphreportview",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphreportview",
       "target": "ref_mui_material",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "ref_react_dropzone",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_dropzone",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_introduction",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_hooks_usefilehandler",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_hooks_usegraphdata",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L9",
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -4599,127 +6070,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "ref_mui_icons_material",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "ref_fuse_js",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "ref_react_force_graph_3d",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "ref_three",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_searchdrawer",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L33",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_detaildrawer",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_models_search_result",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_api_agent",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L36",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "src_app_components_apisearchdrawer",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L37",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphviewer",
-      "target": "ref_three_spritetext",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L38",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -4731,7 +6082,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L4",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -4743,7 +6094,127 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L9",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "ref_fuse_js",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "ref_three",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_searchdrawer",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_detaildrawer",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_models_search_result",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_api_agent",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_apisearchdrawer",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "ref_three_spritetext",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_utils_sanitizegraphdata",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -4844,6 +6315,18 @@
     },
     {
       "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_models_graphify",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
       "target": "ref_react_router_dom",
       "relation": "imports_from",
       "_origin": "ast",
@@ -4952,6 +6435,18 @@
     },
     {
       "source": "src_app_hooks_usegraphdata",
+      "target": "src_app_models_graphify",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata",
       "target": "src_app_models_entity",
       "relation": "imports_from",
       "_origin": "ast",
@@ -5044,6 +6539,42 @@
       "context": "import",
       "source_file": "src/app/hooks/useGraphData.ts",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "ref_d3_force",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "src_app_models_custom_graph_data",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -5215,6 +6746,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_models_graphify",
+      "target": "ref_material_react_table",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_models_relationship",
       "target": "ref_material_react_table",
       "relation": "imports_from",
@@ -5247,6 +6790,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/utils/parquet-utils.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_models_custom_graph_data",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -5348,6 +6903,292 @@
       "weight": 1.0
     },
     {
+      "source": "agents",
+      "target": "agents_agents_md_devmind_directives_engineering_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_devmind_directives_engineering_rules",
+      "target": "agents_graphify",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_devmind_directives_engineering_rules",
+      "target": "agents_diagram_design",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_devmind_directives_engineering_rules",
+      "target": "agents_architecture_readme_sync",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_devmind_directives_engineering_rules",
+      "target": "agents_caveman_response_style",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_agents_md_devmind_directives_engineering_rules",
+      "target": "agents_code_structure",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure",
+      "target": "agents_rules_code_structure_code_structure_boundaries",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_code_structure_boundaries",
+      "target": "agents_rules_code_structure_2_size_limits",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_code_structure_boundaries",
+      "target": "agents_rules_code_structure_3_oversized_files_grandfathered",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_code_structure_boundaries",
+      "target": "agents_rules_code_structure_4_verification_steps",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_code_structure_boundaries",
+      "target": "agents_rules_code_structure_1_layer_boundaries",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_diagram_design_skill",
+      "target": "agents_skills_diagram_design_skill_diagram_design",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_diagram_design_skill_diagram_design",
+      "target": "agents_skills_diagram_design_skill_diagram_theme",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_skills_diagram_design_skill_diagram_design",
+      "target": "agents_skills_diagram_design_skill_animation_rules_pure_inline_svg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".agents/skills/diagram-design/SKILL.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search",
+      "target": "claude_commands_search_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search",
+      "target": "claude_commands_search_answer_format",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search",
+      "target": "claude_commands_search_strategy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_docs",
+      "target": "claude_commands_search_docs_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_docs",
+      "target": "claude_commands_search_docs_answer_format",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_docs",
+      "target": "claude_commands_search_docs_strategy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-docs.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_knowledge",
+      "target": "claude_commands_search_knowledge_rules",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_knowledge",
+      "target": "claude_commands_search_knowledge_answer_format",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_search_knowledge",
+      "target": "claude_commands_search_knowledge_strategy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/search-knowledge.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_todo",
+      "target": "claude_commands_todo_storage_format",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_todo",
+      "target": "claude_commands_todo_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_commands_todo",
+      "target": "claude_commands_todo_commands",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".claude/commands/todo.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "package",
       "target": "package_name",
       "relation": "contains",
@@ -5377,7 +7218,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -5399,7 +7240,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -5421,7 +7262,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -5443,7 +7284,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L63",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -5454,7 +7295,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -5465,7 +7306,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L57",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -5569,7 +7410,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_fuse_js",
+      "target": "package_dependencies_d3_force",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5580,7 +7421,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_hyparquet",
+      "target": "package_dependencies_fuse_js",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5591,7 +7432,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_material_react_table",
+      "target": "package_dependencies_hyparquet",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5602,7 +7443,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_material_react_table",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5613,7 +7454,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_app_rewired",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5624,7 +7465,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_react_app_rewired",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5635,7 +7476,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dropzone",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5646,7 +7487,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_force_graph_2d",
+      "target": "package_dependencies_react_dropzone",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5657,7 +7498,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_force_graph_3d",
+      "target": "package_dependencies_react_force_graph_2d",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5668,7 +7509,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_ga4",
+      "target": "package_dependencies_react_force_graph_3d",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5679,7 +7520,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_router_dom",
+      "target": "package_dependencies_react_ga4",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5690,7 +7531,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_scripts",
+      "target": "package_dependencies_react_router_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5701,7 +7542,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_table",
+      "target": "package_dependencies_react_scripts",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5712,7 +7553,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_three",
+      "target": "package_dependencies_react_table",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5723,7 +7564,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_three_spritetext",
+      "target": "package_dependencies_three",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5734,7 +7575,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_typescript",
+      "target": "package_dependencies_three_spritetext",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5745,13 +7586,24 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_web_vitals",
+      "target": "package_dependencies_typescript",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_web_vitals",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -5789,18 +7641,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_table",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L64",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_three",
+      "target": "package_devdependencies_types_d3_force",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5811,13 +7652,35 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_gh_pages",
+      "target": "package_devdependencies_types_react_table",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_three",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_gh_pages",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -5828,7 +7691,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -5839,7 +7702,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5850,7 +7713,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -5861,7 +7724,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -5872,7 +7735,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -5883,7 +7746,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -5894,7 +7757,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -5983,6 +7846,138 @@
       "confidence_score": 1.0,
       "source_file": "public/manifest.json",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_graphrag_visualizer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_developer_instructions",
+      "target": "readme_loading_graphify_files",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_developer_instructions",
+      "target": "readme_setting_up_the_project",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_developer_instructions",
+      "target": "readme_loading_parquet_files",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graph_data_model",
+      "target": "readme_nodes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graph_data_model",
+      "target": "readme_relationships",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_important_note",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_features",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_using_the_search_functionality",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_graph_data_model",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_developer_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_graphrag_visualizer",
+      "target": "readme_overview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6092,7 +8087,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L22",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -6103,7 +8098,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/DataTableContainer.tsx",
-      "source_location": "L44",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -6136,7 +8131,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L11",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -6147,7 +8142,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_graphdatahandler_graphviewer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_graphdatahandler_datatablecontainer",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_graphdatahandler_gettabindexfrompathname",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -6158,7 +8186,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L13",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphreportview",
+      "target": "src_app_components_graphreportview_graphreportviewprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphreportview",
+      "target": "src_app_components_graphreportview_graphreportview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphReportView.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "src_app_components_graphviewer_forcegraph3d",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphViewer.tsx",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -6169,7 +8230,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L40",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -6180,7 +8241,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L46",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -6191,7 +8252,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L71",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -6235,7 +8296,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L12",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -6246,7 +8307,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L22",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -6257,7 +8318,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L32",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_hooks_usefilehandler_extractcommunities",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -6268,7 +8340,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L38",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata",
+      "target": "src_app_hooks_usegraphdata_buildgraphdata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphdata",
+      "target": "src_app_hooks_usegraphdata_buildgraphdatafromgraphify",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -6279,7 +8373,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useGraphData.ts",
-      "source_location": "L11",
+      "source_location": "L404",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usegraphforces",
+      "target": "src_app_hooks_usegraphforces_usegraphforces",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/hooks/useGraphForces.ts",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -6400,7 +8505,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L184",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
@@ -6411,7 +8516,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L47",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -6422,7 +8527,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L62",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -6433,7 +8538,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/models/custom-graph-data.ts",
-      "source_location": "L68",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -6489,6 +8594,105 @@
       "confidence_score": 1.0,
       "source_file": "src/app/models/entity.ts",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifylinkcolumns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifycommunitycolumns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifymanifestcolumns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifylink",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifynode",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifygraph",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifycommunity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifymanifestitem",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_models_graphify",
+      "target": "src_app_models_graphify_graphifynodecolumns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/models/graphify.ts",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -6577,6 +8781,61 @@
       "confidence_score": 1.0,
       "source_file": "src/app/utils/parquet-utils.ts",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_force_graph_link_keys",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_stripkeys",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_normalizelinkendpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_sanitizegraphdata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_sanitizegraphdata",
+      "target": "src_app_utils_sanitizegraphdata_force_graph_node_keys",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/sanitizeGraphData.ts",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -6921,6 +9180,33 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_datatablecontainer",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx"
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_graphviewer",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx"
+    },
+    {
+      "source": "src_app_components_graphviewer",
+      "target": "react_force_graph_3d",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphViewer.tsx"
+    },
+    {
       "source": "src_reportwebvitals",
       "target": "web_vitals",
       "relation": "dynamic_import",
@@ -6961,8 +9247,32 @@
       "source_file": "src/app/utils/parquet-utils.ts",
       "source_location": "L6",
       "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_1_layer_boundaries",
+      "target": "src_app_hooks_usefilehandler_usefilehandler",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "useFileHandler",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "agents_rules_code_structure_1_layer_boundaries",
+      "target": "src_app_hooks_usegraphdata_usegraphdata",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "useGraphData",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L14",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8648cde8e1c7bb605f3ff45c0610e3932deba143"
+  "built_at_commit": "1fab50d85b24a02e991ce7bbdfdedb76c2acf6c8"
 }

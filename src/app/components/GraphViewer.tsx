@@ -80,6 +80,7 @@ interface GraphViewerProps {
   maxEntities: number;
   onMaxEntitiesChange: React.Dispatch<React.SetStateAction<number>>;
   totalEntities: number;
+  dataSource?: "graphrag" | "graphify";
 }
 
 const NODE_R = 8;
@@ -105,8 +106,24 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
   maxEntities,
   onMaxEntitiesChange,
   totalEntities,
+  dataSource = "graphrag",
 }) => {
   const theme = useTheme();
+  const [colorByCommunity, setColorByCommunity] = useState<boolean>(
+    dataSource === "graphify",
+  );
+
+  useEffect(() => {
+    if (dataSource === "graphify") {
+      setColorByCommunity(true);
+    }
+  }, [dataSource]);
+
+  const hasCommunityData = useMemo(
+    () => data.nodes.some((n) => Boolean(n.community_name)),
+    [data.nodes],
+  );
+
   const sliderMax = Math.max(totalEntities, 1000);
   const sliderMin = 50;
   const toSliderValue = (value: number) =>
@@ -359,6 +376,9 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           "target",
           "title",
           "summary",
+          "community_name",
+          "source_file",
+          "relation",
         ],
         threshold: 0.3,
       }),
@@ -633,7 +653,8 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
 
       // Draw the text in the center of the node
       // ctx.fillStyle = textColor;
-      ctx.fillStyle = node.color;
+      ctx.fillStyle =
+        node.color || (theme.palette.mode === "dark" ? "#ffffff" : "#222222");
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(label, node.x, node.y);
@@ -648,7 +669,8 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
     try {
       const nodeEl = document.createElement("div");
       nodeEl.textContent = node.name || node.id; // Use either name or id for the label
-      nodeEl.style.color = node.color;
+      nodeEl.style.color =
+        node.color || (theme.palette.mode === "dark" ? "#ffffff" : "#222222");
       nodeEl.style.padding = "2px 4px";
       nodeEl.style.borderRadius = "4px";
       nodeEl.style.fontSize = "10px";
@@ -792,70 +814,85 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
             }
             label="Show Highlight"
           />
+          {hasCommunityData && (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={colorByCommunity}
+                  onChange={() => setColorByCommunity(!colorByCommunity)}
+                />
+              }
+              label="Color by Community"
+            />
+          )}
         </Box>
 
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={includeDocuments}
-                onChange={() => onIncludeDocumentsChange(!includeDocuments)}
-                disabled={!hasDocuments || apiSearchResults !== null}
-              />
-            }
-            label="Include Documents"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={includeTextUnits}
-                // onChange={() => onIncludeTextUnitsChange(!includeTextUnits)}
-                onChange={() => {
-                  if (!includeTextUnits) {
-                    onIncludeTextUnitsChange(true);
-                  } else if (includeTextUnits && !includeCovariates) {
-                    onIncludeTextUnitsChange(false);
-                  } else {
-                    onIncludeTextUnitsChange(false);
-                    onIncludeCovariatesChange(false); // Uncheck Covariates when Text Units is unchecked
-                  }
-                }}
-                disabled={!hasTextUnits || apiSearchResults !== null}
-              />
-            }
-            label="Include Text Units"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={includeCommunities}
-                onChange={() => onIncludeCommunitiesChange(!includeCommunities)}
-                disabled={!hasCommunities || apiSearchResults !== null}
-              />
-            }
-            label="Include Communities"
-          />
-
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={includeCovariates}
-                onChange={() => {
-                  if (!includeCovariates) {
+        {(hasDocuments ||
+          hasTextUnits ||
+          hasCommunities ||
+          hasCovariates) && (
+          <FormGroup>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={includeDocuments}
+                  onChange={() => onIncludeDocumentsChange(!includeDocuments)}
+                  disabled={!hasDocuments || apiSearchResults !== null}
+                />
+              }
+              label="Include Documents"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={includeTextUnits}
+                  onChange={() => {
                     if (!includeTextUnits) {
                       onIncludeTextUnitsChange(true);
+                    } else if (includeTextUnits && !includeCovariates) {
+                      onIncludeTextUnitsChange(false);
+                    } else {
+                      onIncludeTextUnitsChange(false);
+                      onIncludeCovariatesChange(false);
                     }
-                    onIncludeCovariatesChange(true);
-                  } else {
-                    onIncludeCovariatesChange(false);
-                  }
-                }}
-                disabled={!hasCovariates || apiSearchResults !== null}
-              />
-            }
-            label="Include Covariates"
-          />
-        </FormGroup>
+                  }}
+                  disabled={!hasTextUnits || apiSearchResults !== null}
+                />
+              }
+              label="Include Text Units"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={includeCommunities}
+                  onChange={() => onIncludeCommunitiesChange(!includeCommunities)}
+                  disabled={!hasCommunities || apiSearchResults !== null}
+                />
+              }
+              label="Include Communities"
+            />
+
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={includeCovariates}
+                  onChange={() => {
+                    if (!includeCovariates) {
+                      if (!includeTextUnits) {
+                        onIncludeTextUnitsChange(true);
+                      }
+                      onIncludeCovariatesChange(true);
+                    } else {
+                      onIncludeCovariatesChange(false);
+                    }
+                  }}
+                  disabled={!hasCovariates || apiSearchResults !== null}
+                />
+              }
+              label="Include Covariates"
+            />
+          </FormGroup>
+        )}
 
         {availableEntityTypes.length > 0 && (
           <Accordion
@@ -1001,10 +1038,11 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           key={graphRenderKey}
           ref={graphRef}
           graphData={displayGraphData}
-          nodeAutoColorBy="type"
+          nodeAutoColorBy={colorByCommunity ? "community_name" : "type"}
           nodeRelSize={NODE_R}
           cooldownTicks={100}
-          cooldownTime={4000}
+          linkDirectionalArrowLength={3.5}
+          linkDirectionalArrowRelPos={1}
           linkWidth={(link) =>
             showHighlight && highlightLinks.has(link) ? 5 : 1
           }
@@ -1041,7 +1079,7 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
               (globalScale >= 1.5 ||
                 (showHighlight && highlightLinks.has(link as CustomLink)))
             ) {
-              const label = link.type || "";
+              const label = (link as any).relation || link.type || "";
               const fontSize = 4;
               ctx.font = `${fontSize}px Sans-Serif`;
               ctx.fillStyle =
@@ -1100,8 +1138,10 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
             ref={graphRef}
             extraRenderers={extraRenderers}
             graphData={displayGraphData}
-            nodeAutoColorBy="type"
+            nodeAutoColorBy={colorByCommunity ? "community_name" : "type"}
             nodeRelSize={NODE_R}
+            linkDirectionalArrowLength={3.5}
+            linkDirectionalArrowRelPos={1}
             linkWidth={(link) =>
               showHighlight && highlightLinks.has(link as CustomLink) ? 5 : 1
             }
@@ -1128,7 +1168,9 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
             linkThreeObjectExtend={true}
             linkThreeObject={(link) => {
               if (!showLinkLabels) return new THREE.Object3D();
-              const sprite = new SpriteText(`${(link as CustomLink).type}`);
+              const sprite = new SpriteText(
+                `${(link as CustomLink).relation || (link as CustomLink).type}`,
+              );
               sprite.color = "lightgrey";
               sprite.textHeight = 1.5;
               return sprite;
@@ -1161,6 +1203,12 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           gap: 1,
         }}
       >
+        <Chip
+          label={dataSource === "graphify" ? "Graphify Code Graph" : "GraphRAG Graph"}
+          size="small"
+          color={dataSource === "graphify" ? "secondary" : "primary"}
+          sx={{ fontWeight: 600 }}
+        />
         <Typography variant="body2">Nodes: {nodeCount}</Typography>
         <Typography variant="body2">Relationships: {linkCount}</Typography>
         <Button

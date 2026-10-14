@@ -44,8 +44,16 @@ const Introduction: React.FC = () => {
         >
           GraphRAG
         </Link>{" "}
-        artifacts. Simply upload the parquet files to visualize the data without
-        needing additional software like Gephi, Neo4j, or Jupyter Notebook.
+        parquet artifacts as well as{" "}
+        <Link
+          href="https://github.com/Graphify-Labs/graphify"
+          target="_blank"
+          rel="noopener"
+        >
+          Graphify
+        </Link>{" "}
+        codebase knowledge graphs (<code>graph.json</code> or <code>graphify-out</code> directory).
+        Simply upload your artifacts to visualize without needing additional software like Gephi, Neo4j, or Jupyter Notebook.
       </Typography>
 
       <Box

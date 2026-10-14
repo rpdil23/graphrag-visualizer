@@ -42,6 +42,16 @@ export interface CustomNode extends NodeObject {
     text_unit_id?: string;
     covariate_type?: string;
     parent?: number;
+    community?: number;
+    community_name?: string;
+    source_file?: string;
+    source_location?: string;
+    file_type?: string;
+    confidence?: string;
+    degree?: number;
+    _callable?: boolean;
+    _callable_class?: boolean;
+    member_count?: number;
   }
   
 export interface CustomLink extends LinkObject {
@@ -57,6 +67,12 @@ export interface CustomLink extends LinkObject {
     source_degree?: number;
     target_degree?: number;
     rank?: number;
+    relation?: string;
+    confidence?: string;
+    confidence_score?: number;
+    source_file?: string;
+    source_location?: string;
+    context?: string;
   }
   
 export interface CustomGraphData extends GraphData {
@@ -178,7 +194,26 @@ export interface CustomGraphData extends GraphData {
           ? JSON.stringify(renderedCellValue, null, 2)
           : renderedCellValue,
     },
-
+    {
+      accessorKey: "community_name",
+      header: "community_name",
+    },
+    {
+      accessorKey: "source_file",
+      header: "source_file",
+    },
+    {
+      accessorKey: "source_location",
+      header: "source_location",
+    },
+    {
+      accessorKey: "confidence",
+      header: "confidence",
+    },
+    {
+      accessorKey: "degree",
+      header: "degree",
+    },
   ];
 
   export const customLinkColumns: MRT_ColumnDef<CustomLink>[] = [
@@ -191,8 +226,24 @@ export interface CustomGraphData extends GraphData {
         header: "target",
     },
     {
+        accessorKey: "relation",
+        header: "relation",
+    },
+    {
         accessorKey: "type",
         header: "type",
+    },
+    {
+        accessorKey: "confidence",
+        header: "confidence",
+    },
+    {
+        accessorKey: "source_file",
+        header: "source_file",
+    },
+    {
+        accessorKey: "source_location",
+        header: "source_location",
     },
     {
         accessorKey: "weight",

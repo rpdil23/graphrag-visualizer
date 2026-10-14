@@ -153,7 +153,11 @@ const SearchDrawer: React.FC<SearchDrawerProps> = ({
                             ? (link.target as CustomNode).name
                             : link.target}
                         </TableCell>
-                        <TableCell>{link.description}</TableCell>
+                        <TableCell>
+                          {link.relation
+                            ? `${link.relation}${link.confidence ? ` [${link.confidence}]` : ""}`
+                            : link.description || link.type}
+                        </TableCell>
                         <TableCell>
                           <Box display="flex" justifyContent="space-between">
                             <Button

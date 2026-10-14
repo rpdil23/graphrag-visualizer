@@ -1,0 +1,414 @@
+{
+  "communities": {
+    "0": [
+      "package",
+      "package_browserslist",
+      "package_browserslist_development",
+      "package_browserslist_production",
+      "package_devdependencies",
+      "package_devdependencies_gh_pages",
+      "package_devdependencies_types_react_table",
+      "package_devdependencies_types_three",
+      "package_eslintconfig",
+      "package_eslintconfig_extends",
+      "package_homepage",
+      "package_name",
+      "package_private",
+      "package_version",
+      "ref_emotion_react",
+      "ref_emotion_styled",
+      "ref_gh_pages",
+      "ref_react_app",
+      "ref_react_app_jest",
+      "ref_react_app_rewired",
+      "ref_react_dom",
+      "ref_react_dropzone",
+      "ref_react_scripts",
+      "ref_testing_library_jest_dom",
+      "ref_testing_library_react",
+      "ref_testing_library_user_event",
+      "ref_types_jest",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_types_react_table",
+      "ref_types_three",
+      "ref_typescript",
+      "src_setuptests"
+    ],
+    "1": [
+      "ref_material_react_table",
+      "src_app_components_datatablecontainer",
+      "src_app_components_datatablecontainer_datatablecontainerprops",
+      "src_app_components_detaildrawer",
+      "src_app_hooks_usefilehandler",
+      "src_app_hooks_usefilehandler_basefilenames",
+      "src_app_hooks_usefilehandler_basemapping",
+      "src_app_hooks_usefilehandler_fileschemas",
+      "src_app_hooks_usegraphdata",
+      "src_app_models_community",
+      "src_app_models_community_community",
+      "src_app_models_community_communitycolumns",
+      "src_app_models_community_report",
+      "src_app_models_community_report_communityreport",
+      "src_app_models_community_report_communityreportcolumns",
+      "src_app_models_community_report_findingcolumns",
+      "src_app_models_covariate",
+      "src_app_models_covariate_covariate",
+      "src_app_models_covariate_covariatecolumns",
+      "src_app_models_document",
+      "src_app_models_document_document",
+      "src_app_models_document_documentcolumns",
+      "src_app_models_entity",
+      "src_app_models_entity_entity",
+      "src_app_models_entity_entitycolumns",
+      "src_app_models_relationship",
+      "src_app_models_relationship_relationship",
+      "src_app_models_relationship_relationshipcolumns",
+      "src_app_models_text_unit",
+      "src_app_models_text_unit_textunit",
+      "src_app_models_text_unit_textunitcolumns"
+    ],
+    "2": [
+      "package_dependencies",
+      "package_dependencies_axios",
+      "package_dependencies_emotion_react",
+      "package_dependencies_emotion_styled",
+      "package_dependencies_fuse_js",
+      "package_dependencies_hyparquet",
+      "package_dependencies_material_react_table",
+      "package_dependencies_mui_icons_material",
+      "package_dependencies_mui_material",
+      "package_dependencies_react",
+      "package_dependencies_react_app_rewired",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_dropzone",
+      "package_dependencies_react_force_graph_2d",
+      "package_dependencies_react_force_graph_3d",
+      "package_dependencies_react_ga4",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_react_scripts",
+      "package_dependencies_react_table",
+      "package_dependencies_testing_library_jest_dom",
+      "package_dependencies_testing_library_react",
+      "package_dependencies_testing_library_user_event",
+      "package_dependencies_three",
+      "package_dependencies_three_spritetext",
+      "package_dependencies_types_jest",
+      "package_dependencies_types_node",
+      "package_dependencies_types_react",
+      "package_dependencies_types_react_dom",
+      "package_dependencies_typescript",
+      "package_dependencies_web_vitals"
+    ],
+    "3": [
+      "ref_fuse_js",
+      "ref_mui_icons_material",
+      "ref_react_force_graph_2d",
+      "ref_react_force_graph_3d",
+      "ref_three",
+      "ref_three_spritetext",
+      "src_app_components_apisearchdrawer",
+      "src_app_components_apisearchdrawer_apisearchdrawer",
+      "src_app_components_apisearchdrawer_apisearchdrawerprops",
+      "src_app_components_detaildrawer_detaildrawer",
+      "src_app_components_detaildrawer_detaildrawerprops",
+      "src_app_components_graphviewer",
+      "src_app_components_graphviewer_coords",
+      "src_app_components_graphviewer_graphviewer",
+      "src_app_components_graphviewer_graphviewerprops",
+      "src_app_components_searchdrawer",
+      "src_app_components_searchdrawer_searchdrawer",
+      "src_app_components_searchdrawer_searchdrawerprops",
+      "src_app_models_community_report_finding",
+      "src_app_models_custom_graph_data",
+      "src_app_models_custom_graph_data_customgraphdata",
+      "src_app_models_custom_graph_data_customlink",
+      "src_app_models_custom_graph_data_customlinkcolumns",
+      "src_app_models_custom_graph_data_customnode",
+      "src_app_models_custom_graph_data_customnodecolumns",
+      "src_app_models_search_result",
+      "src_app_models_search_result_searchresult"
+    ],
+    "4": [
+      "ref_mui_material",
+      "ref_react",
+      "ref_react_ga4",
+      "ref_react_router_dom",
+      "ref_web_vitals",
+      "src_app_components_datatable",
+      "src_app_components_datatable_datatable",
+      "src_app_components_datatable_datatableprops",
+      "src_app_components_datatablecontainer_datatablecontainer",
+      "src_app_components_dropzone",
+      "src_app_components_dropzone_dropzone",
+      "src_app_components_dropzone_dropzoneprops",
+      "src_app_components_graphdatahandler",
+      "src_app_components_graphdatahandler_graphdatahandler",
+      "src_app_components_introduction",
+      "src_app_components_introduction_introduction",
+      "src_app_hooks_usefilehandler_usefilehandler",
+      "src_app_hooks_usegraphdata_usegraphdata",
+      "src_app_layout_app",
+      "src_app_layout_app_app",
+      "src_app_layout_app_app_handlethemechange",
+      "src_index",
+      "src_index_root",
+      "src_reportwebvitals",
+      "src_reportwebvitals_reportwebvitals",
+      "web_vitals"
+    ],
+    "5": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_include"
+    ],
+    "6": [
+      "ref_react_table",
+      "src_react_table_config_d",
+      "src_react_table_config_d_cell",
+      "src_react_table_config_d_columninstance",
+      "src_react_table_config_d_columninterface",
+      "src_react_table_config_d_hooks",
+      "src_react_table_config_d_react_table",
+      "src_react_table_config_d_row",
+      "src_react_table_config_d_tableinstance",
+      "src_react_table_config_d_tableoptions",
+      "src_react_table_config_d_tablestate"
+    ],
+    "7": [
+      "public_manifest",
+      "public_manifest_background_color",
+      "public_manifest_description",
+      "public_manifest_display",
+      "public_manifest_icons",
+      "public_manifest_name",
+      "public_manifest_short_name",
+      "public_manifest_start_url",
+      "public_manifest_theme_color"
+    ],
+    "8": [
+      "ref_hyparquet",
+      "src_app_utils_parquet_utils",
+      "src_app_utils_parquet_utils_asyncbuffer",
+      "src_app_utils_parquet_utils_asyncbuffer_bytelength",
+      "src_app_utils_parquet_utils_asyncbuffer_constructor",
+      "src_app_utils_parquet_utils_asyncbuffer_slice",
+      "src_app_utils_parquet_utils_parsevalue",
+      "src_app_utils_parquet_utils_readparquetfile"
+    ],
+    "9": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_deploy",
+      "package_scripts_eject",
+      "package_scripts_predeploy",
+      "package_scripts_start",
+      "package_scripts_test"
+    ],
+    "10": [
+      "ref_axios",
+      "src_app_api_agent",
+      "src_app_api_agent_agent",
+      "src_app_api_agent_requests",
+      "src_app_api_agent_responsebody",
+      "src_app_api_agent_search",
+      "src_app_api_agent_status"
+    ],
+    "11": [
+      "ref_types_d_ts",
+      "src_hyparquet_d",
+      "src_hyparquet_d_columndata",
+      "src_hyparquet_d_parquetreadoptions",
+      "unresolved_reexport_src_types_d_5703d29ccdb1"
+    ],
+    "12": [
+      "src_declarations_d",
+      "src_declarations_d_json"
+    ],
+    "13": [
+      "config_overrides"
+    ],
+    "14": [
+      "src_react_app_env_d"
+    ]
+  },
+  "cohesion": {
+    "0": 0.058823529411764705,
+    "1": 0.2064516129032258,
+    "2": 0.06666666666666667,
+    "3": 0.1396011396011396,
+    "4": 0.1476923076923077,
+    "5": 0.1111111111111111,
+    "6": 0.18181818181818182,
+    "7": 0.2222222222222222,
+    "8": 0.35714285714285715,
+    "9": 0.2857142857142857,
+    "10": 0.2857142857142857,
+    "11": 0.4,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 14
+    },
+    {
+      "id": "ref_material_react_table",
+      "label": "material-react-table",
+      "degree": 11
+    },
+    {
+      "id": "ref_mui_material",
+      "label": "@mui/material",
+      "degree": 11
+    },
+    {
+      "id": "src_app_components_graphdatahandler_graphdatahandler",
+      "label": "GraphDataHandler()",
+      "degree": 9
+    },
+    {
+      "id": "src_app_components_datatablecontainer_datatablecontainerprops",
+      "label": "DataTableContainerProps",
+      "degree": 8
+    },
+    {
+      "id": "src_app_models_custom_graph_data_customnode",
+      "label": "CustomNode",
+      "degree": 8
+    },
+    {
+      "id": "src_app_models_custom_graph_data_customlink",
+      "label": "CustomLink",
+      "degree": 7
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 7
+    },
+    {
+      "id": "src_app_components_graphviewer_graphviewer",
+      "label": "GraphViewer()",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "DetailDrawer()",
+      "target": "DataTable()",
+      "source_files": [
+        "src/app/components/DetailDrawer.tsx",
+        "src/app/components/DataTable.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "GraphDataHandler()",
+      "target": "GraphViewer()",
+      "source_files": [
+        "src/app/components/GraphDataHandler.tsx",
+        "src/app/components/GraphViewer.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "useFileHandler()",
+      "target": "readParquetFile()",
+      "source_files": [
+        "src/app/hooks/useFileHandler.ts",
+        "src/app/utils/parquet-utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "DataTableContainerProps",
+      "target": "Community",
+      "source_files": [
+        "src/app/components/DataTableContainer.tsx",
+        "src/app/models/community.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "DataTableContainerProps",
+      "target": "CommunityReport",
+      "source_files": [
+        "src/app/components/DataTableContainer.tsx",
+        "src/app/models/community-report.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.206) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `@emotion/react`, `@emotion/styled`, `gh-pages` to the rest of the system?",
+      "why": "16 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `GraphDataHandler.tsx` to `package.json`, `DataTableContainer.tsx`, `GraphViewer.tsx`?",
+      "why": "High betweenness centrality (0.109) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `dependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06666666666666667 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react-table` connect `react-table-config.d.ts` to `package.json`?",
+      "why": "High betweenness centrality (0.073) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `GraphViewer.tsx` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1396011396011396 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
