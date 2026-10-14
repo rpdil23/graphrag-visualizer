@@ -27,8 +27,6 @@ Files exceeding limits. Do not expand further; extract sub-modules when modifyin
 - `src/app/hooks/useGraphData.ts` (421 lines) - Graph state management and filtering.
 - `src/app/components/DataTableContainer.tsx` (372 lines) - Multi-table container and tabs.
 - `src/app/components/GraphReportView.tsx` (327 lines) - Graph report viewer.
-- `src/app/hooks/useFileHandler.ts` (323 lines) - Parquet decoding and file ingestion.
-- `src/app/components/GraphDataHandler.tsx` (314 lines) - File upload orchestration.
 - `src/app/components/DetailDrawer.tsx` (312 lines) - Entity and relationship details panel.
 
 ## 4. Verification Steps

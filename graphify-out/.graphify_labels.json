@@ -15,13 +15,6 @@
   "13": "config-overrides.js",
   "14": "react-app-env.d.ts",
   "15": "AGENTS.md - Devmind Directives & Engineering Rules",
-  "16": "Code Structure & Boundaries",
-  "17": "diagram-design",
-  "18": "search.md",
-  "19": "search-docs.md",
-  "20": "search-knowledge.md",
-  "21": "todo.md",
-  "22": "devlog.md",
-  "23": "eod.md",
-  "24": "notes.md"
+  "16": "useFileHandler",
+  "17": "diagram-design"
 }

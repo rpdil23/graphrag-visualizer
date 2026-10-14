@@ -11,17 +11,10 @@ import GraphDataHandler from "../components/GraphDataHandler";
 import {
   CssBaseline,
   Container,
-  Box,
   createTheme,
   darkScrollbar,
   ThemeProvider,
-  IconButton,
-  Tooltip,
-  Link,
 } from "@mui/material";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -83,51 +76,37 @@ const App: React.FC = () => {
         <Container disableGutters maxWidth={false}>
           <CssBaseline />
 
-          <Box
-            sx={{
-              position: "absolute",
-              top: 12,
-              right: 12,
-              zIndex: 1000,
-              display: "flex",
-              flexDirection: { xs: "column", sm: "row" },
-              alignItems: "center",
-              gap: 1,
-              padding: { xs: "20px 0px", sm: "0" },
-            }}
-          >
-            <IconButton
-              component={Link}
-              href="https://github.com/noworneverev/graphrag-visualizer"
-              target="_blank"
-              rel="noopener"
-              color="inherit"
-            >
-              <GitHubIcon />
-            </IconButton>
-            {darkMode ? (
-              <Tooltip title="Turn on the light">
-                <IconButton onClick={handleThemeChange} color="inherit">
-                  <DarkModeOutlinedIcon />
-                </IconButton>
-              </Tooltip>
-            ) : (
-              <Tooltip title="Turn off the light">
-                <IconButton onClick={handleThemeChange} color="inherit">
-                  <LightModeOutlinedIcon />
-                </IconButton>
-              </Tooltip>
-            )}
-          </Box>
           <Routes>
-            <Route path="/" element={<Navigate to="/upload" replace />} />{" "}
-            <Route path="/upload" element={<GraphDataHandler />} />{" "}
-            <Route path="/graph" element={<GraphDataHandler />} />{" "}
-            <Route path="/data" element={<GraphDataHandler />} />{" "}
-            <Route path="*" element={<Navigate to="/upload" replace />} />{" "}
+            <Route path="/" element={<Navigate to="/upload" replace />} />
+            <Route
+              path="/upload"
+              element={
+                <GraphDataHandler
+                  darkMode={darkMode}
+                  onToggleTheme={handleThemeChange}
+                />
+              }
+            />
+            <Route
+              path="/graph"
+              element={
+                <GraphDataHandler
+                  darkMode={darkMode}
+                  onToggleTheme={handleThemeChange}
+                />
+              }
+            />
+            <Route
+              path="/data"
+              element={
+                <GraphDataHandler
+                  darkMode={darkMode}
+                  onToggleTheme={handleThemeChange}
+                />
+              }
+            />
+            <Route path="*" element={<Navigate to="/upload" replace />} />
           </Routes>
-
-          {/* <GraphDataHandler /> */}
         </Container>
       </Router>
     </ThemeProvider>

@@ -7,19 +7,6 @@
   },
   "nodes": [
     {
-      "id": "src_app_components_datatable_datatableprops",
-      "label": "DataTableProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "DataTableContainer.tsx",
-      "file_type": "code",
-      "norm_label": "datatableprops",
-      "source_file": "src/app/components/DataTable.tsx",
-      "source_location": "L9"
-    },
-    {
       "id": "src_app_components_datatablecontainer_datatablecontainerprops",
       "label": "DataTableContainerProps",
       "_callable": true,
@@ -345,17 +332,43 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_components_dropzone_dropzoneprops",
-      "label": "DropZoneProps",
+      "id": "src_app_components_appheader_appheaderprops",
+      "label": "AppHeaderProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "dropzoneprops",
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L7"
+      "norm_label": "appheaderprops",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_app_components_datatable_datatableprops",
+      "label": "DataTableProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "datatableprops",
+      "source_file": "src/app/components/DataTable.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_app_components_graphdatahandler_graphdatahandlerprops",
+      "label": "GraphDataHandlerProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "graphdatahandlerprops",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L27"
     },
     {
       "id": "src_app_components_graphreportview_graphreportviewprops",
@@ -369,6 +382,32 @@
       "norm_label": "graphreportviewprops",
       "source_file": "src/app/components/GraphReportView.tsx",
       "source_location": "L18"
+    },
+    {
+      "id": "src_app_components_sourceuploadcard_sourceuploadcardprops",
+      "label": "SourceUploadCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "sourceuploadcardprops",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "src_app_components_uploadview_uploadviewprops",
+      "label": "UploadViewProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "uploadviewprops",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L15"
     },
     {
       "id": "src_react_table_config_d_cell",
@@ -488,6 +527,18 @@
       "source_location": "L3"
     },
     {
+      "id": "src_app_api_agent_responsebody",
+      "label": "responseBody()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "responsebody()",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L7"
+    },
+    {
       "id": "src_app_components_datatable_datatable",
       "label": "DataTable()",
       "_callable": true,
@@ -536,16 +587,124 @@
       "source_location": "L25"
     },
     {
-      "id": "src_app_api_agent_responsebody",
-      "label": "responseBody()",
+      "id": "src_app_hooks_usefilehandler_extractcommunities",
+      "label": "extractCommunities()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
+      "community": 16,
+      "community_name": "useFileHandler",
       "file_type": "code",
-      "norm_label": "responsebody()",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L7"
+      "norm_label": "extractcommunities()",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L35"
+    },
+    {
+      "id": "src_app_hooks_usefilehandler_usefilehandler",
+      "label": "useFileHandler()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "usefilehandler()",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "src_app_hooks_usefilehandler_usefilehandler_restorecacheddata",
+      "label": "restoreCachedData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "restorecacheddata()",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L108"
+    },
+    {
+      "id": "src_app_hooks_usegraphdata_buildgraphdata",
+      "label": "buildGraphData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "buildgraphdata()",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L114"
+    },
+    {
+      "id": "src_app_hooks_usegraphdata_buildgraphdatafromgraphify",
+      "label": "buildGraphDataFromGraphify()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "buildgraphdatafromgraphify()",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_app_hooks_usegraphdata_usegraphdata",
+      "label": "useGraphData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "usegraphdata()",
+      "source_file": "src/app/hooks/useGraphData.ts",
+      "source_location": "L404"
+    },
+    {
+      "id": "src_app_utils_graph_storage_clearcachedgraphdata",
+      "label": "clearCachedGraphData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "clearcachedgraphdata()",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L54"
+    },
+    {
+      "id": "src_app_utils_graph_storage_getcacheditem",
+      "label": "getCachedItem()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "getcacheditem()",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_app_utils_graph_storage_opendb",
+      "label": "openDB()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "opendb()",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_app_utils_graph_storage_setcacheditem",
+      "label": "setCachedItem()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "setcacheditem()",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L23"
     },
     {
       "id": "src_app_components_apisearchdrawer_apisearchdrawer",
@@ -632,16 +791,16 @@
       "source_location": "L24"
     },
     {
-      "id": "src_app_components_dropzone_dropzone",
-      "label": "DropZone()",
+      "id": "src_app_components_appheader_appheader",
+      "label": "AppHeader()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "dropzone()",
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L14"
+      "norm_label": "appheader()",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L35"
     },
     {
       "id": "src_app_components_graphdatahandler_gettabindexfrompathname",
@@ -653,7 +812,7 @@
       "file_type": "code",
       "norm_label": "gettabindexfrompathname()",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L22"
+      "source_location": "L16"
     },
     {
       "id": "src_app_components_graphdatahandler_graphdatahandler",
@@ -665,79 +824,31 @@
       "file_type": "code",
       "norm_label": "graphdatahandler()",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L33"
+      "source_location": "L32"
     },
     {
-      "id": "src_app_components_introduction_introduction",
-      "label": "Introduction()",
+      "id": "src_app_components_sourceuploadcard_sourceuploadcard",
+      "label": "SourceUploadCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "introduction()",
-      "source_file": "src/app/components/Introduction.tsx",
-      "source_location": "L16"
+      "norm_label": "sourceuploadcard()",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L32"
     },
     {
-      "id": "src_app_hooks_usefilehandler_extractcommunities",
-      "label": "extractCommunities()",
+      "id": "src_app_components_uploadview_uploadview",
+      "label": "UploadView()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "extractcommunities()",
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L45"
-    },
-    {
-      "id": "src_app_hooks_usefilehandler_usefilehandler",
-      "label": "useFileHandler()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "usefilehandler()",
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L81"
-    },
-    {
-      "id": "src_app_hooks_usegraphdata_buildgraphdata",
-      "label": "buildGraphData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "buildgraphdata()",
-      "source_file": "src/app/hooks/useGraphData.ts",
-      "source_location": "L114"
-    },
-    {
-      "id": "src_app_hooks_usegraphdata_buildgraphdatafromgraphify",
-      "label": "buildGraphDataFromGraphify()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "buildgraphdatafromgraphify()",
-      "source_file": "src/app/hooks/useGraphData.ts",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_app_hooks_usegraphdata_usegraphdata",
-      "label": "useGraphData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "code",
-      "norm_label": "usegraphdata()",
-      "source_file": "src/app/hooks/useGraphData.ts",
-      "source_location": "L404"
+      "norm_label": "uploadview()",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L28"
     },
     {
       "id": "src_app_layout_app_app",
@@ -749,7 +860,7 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "src/app/layout/App.tsx",
-      "source_location": "L26"
+      "source_location": "L19"
     },
     {
       "id": "src_app_layout_app_app_handlethemechange",
@@ -761,7 +872,7 @@
       "file_type": "code",
       "norm_label": "handlethemechange()",
       "source_file": "src/app/layout/App.tsx",
-      "source_location": "L57"
+      "source_location": "L50"
     },
     {
       "id": "src_reportwebvitals_reportwebvitals",
@@ -1001,6 +1112,61 @@
       "source_location": "L3"
     },
     {
+      "id": "src_app_api_agent",
+      "label": "agent.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "agent.ts",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_api_agent_agent",
+      "label": "agent",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "agent",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "src_app_api_agent_requests",
+      "label": "requests",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "requests",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "src_app_api_agent_search",
+      "label": "Search",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "search",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_app_api_agent_status",
+      "label": "Status",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "status",
+      "source_file": "src/app/api/agent.ts",
+      "source_location": "L60"
+    },
+    {
       "id": "src_setuptests",
       "label": "setupTests.ts",
       "_origin": "ast",
@@ -1010,6 +1176,17 @@
       "norm_label": "setuptests.ts",
       "source_file": "src/setupTests.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "ref_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "axios",
+      "source_file": "package.json",
+      "source_location": "L18"
     },
     {
       "id": "ref_emotion_react",
@@ -1232,17 +1409,6 @@
       "source_location": "L35"
     },
     {
-      "id": "src_app_components_datatable",
-      "label": "DataTable.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "DataTableContainer.tsx",
-      "file_type": "code",
-      "norm_label": "datatable.tsx",
-      "source_file": "src/app/components/DataTable.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_app_components_datatablecontainer",
       "label": "DataTableContainer.tsx",
       "_origin": "ast",
@@ -1276,17 +1442,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_hooks_usefilehandler_basefilenames",
-      "label": "baseFileNames",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "DataTableContainer.tsx",
-      "file_type": "code",
-      "norm_label": "basefilenames",
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L19"
-    },
-    {
       "id": "src_app_hooks_usefilehandler_basemapping",
       "label": "baseMapping",
       "_origin": "ast",
@@ -1295,7 +1450,7 @@
       "file_type": "code",
       "norm_label": "basemapping",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L29"
+      "source_location": "L19"
     },
     {
       "id": "src_app_hooks_usefilehandler_fileschemas",
@@ -1306,7 +1461,7 @@
       "file_type": "code",
       "norm_label": "fileschemas",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L39"
+      "source_location": "L29"
     },
     {
       "id": "src_app_hooks_usegraphdata",
@@ -1846,11 +2001,22 @@
       "source_location": "L18"
     },
     {
+      "id": "src_app_utils_graph_storage",
+      "label": "graph-storage.ts",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "code",
+      "norm_label": "graph-storage.ts",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "agents_rules_code_structure",
       "label": "code-structure.md",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Code Structure & Boundaries",
+      "community_name": "useFileHandler",
       "file_type": "document",
       "frontmatter": {
         "trigger": "always_on",
@@ -1862,11 +2028,23 @@
       "source_location": "L1"
     },
     {
+      "id": "agents_rules_code_structure_1_layer_boundaries",
+      "label": "1. Layer Boundaries",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "useFileHandler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. layer boundaries",
+      "source_file": ".agents/rules/code-structure.md",
+      "source_location": "L8"
+    },
+    {
       "id": "agents_rules_code_structure_2_size_limits",
       "label": "2. Size Limits",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Code Structure & Boundaries",
+      "community_name": "useFileHandler",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "2. size limits",
@@ -1878,7 +2056,7 @@
       "label": "3. Oversized Files (Grandfathered)",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Code Structure & Boundaries",
+      "community_name": "useFileHandler",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "3. oversized files (grandfathered)",
@@ -1890,19 +2068,19 @@
       "label": "4. Verification Steps",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Code Structure & Boundaries",
+      "community_name": "useFileHandler",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "4. verification steps",
       "source_file": ".agents/rules/code-structure.md",
-      "source_location": "L34"
+      "source_location": "L32"
     },
     {
       "id": "agents_rules_code_structure_code_structure_boundaries",
       "label": "Code Structure & Boundaries",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Code Structure & Boundaries",
+      "community_name": "useFileHandler",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "code structure & boundaries",
@@ -1956,102 +2134,6 @@
       "norm_label": "diagram theme",
       "source_file": ".agents/skills/diagram-design/SKILL.md",
       "source_location": "L12"
-    },
-    {
-      "id": "claude_commands_search",
-      "label": "search.md",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "search.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "search.md",
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_search_answer_format",
-      "label": "Answer format",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "search.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "answer format",
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L33"
-    },
-    {
-      "id": "claude_commands_search_rules",
-      "label": "Rules",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "search.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "rules",
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "claude_commands_search_strategy",
-      "label": "Strategy",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "search.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "strategy",
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "claude_commands_search_docs",
-      "label": "search-docs.md",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "search-docs.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "search-docs.md",
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_search_docs_answer_format",
-      "label": "Answer format",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "search-docs.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "answer format",
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L29"
-    },
-    {
-      "id": "claude_commands_search_docs_rules",
-      "label": "Rules",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "search-docs.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "rules",
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L20"
-    },
-    {
-      "id": "claude_commands_search_docs_strategy",
-      "label": "Strategy",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "search-docs.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "strategy",
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L5"
     },
     {
       "id": "package_dependencies",
@@ -2395,138 +2477,6 @@
       "source_location": "L36"
     },
     {
-      "id": "claude_commands_search_knowledge",
-      "label": "search-knowledge.md",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "search-knowledge.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "search-knowledge.md",
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_search_knowledge_answer_format",
-      "label": "Answer format",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "search-knowledge.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "answer format",
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L28"
-    },
-    {
-      "id": "claude_commands_search_knowledge_rules",
-      "label": "Rules",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "search-knowledge.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "rules",
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L19"
-    },
-    {
-      "id": "claude_commands_search_knowledge_strategy",
-      "label": "Strategy",
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "search-knowledge.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "strategy",
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "claude_commands_todo",
-      "label": "todo.md",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "todo.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "todo.md",
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_todo_commands",
-      "label": "Commands",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "todo.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "commands",
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L5"
-    },
-    {
-      "id": "claude_commands_todo_instructions",
-      "label": "Instructions",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "todo.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "instructions",
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L32"
-    },
-    {
-      "id": "claude_commands_todo_storage_format",
-      "label": "Storage format",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "todo.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "storage format",
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L14"
-    },
-    {
-      "id": "claude_commands_devlog",
-      "label": "devlog.md",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "devlog.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "devlog.md",
-      "source_file": ".claude/commands/devlog.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_eod",
-      "label": "eod.md",
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "eod.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "eod.md",
-      "source_file": ".claude/commands/eod.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_commands_notes",
-      "label": "notes.md",
-      "_origin": "ast",
-      "community": 24,
-      "community_name": "notes.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "notes.md",
-      "source_file": ".claude/commands/notes.md",
-      "source_location": "L1"
-    },
-    {
       "id": "react_force_graph_3d",
       "label": "react-force-graph-3d",
       "_origin": "ast",
@@ -2536,61 +2486,6 @@
       "file_type": "code",
       "norm_label": "react-force-graph-3d",
       "source_file": "react-force-graph-3d"
-    },
-    {
-      "id": "src_app_api_agent",
-      "label": "agent.ts",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "agent.ts",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_api_agent_agent",
-      "label": "agent",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "agent",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L64"
-    },
-    {
-      "id": "src_app_api_agent_requests",
-      "label": "requests",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "requests",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L47"
-    },
-    {
-      "id": "src_app_api_agent_search",
-      "label": "Search",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "search",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L55"
-    },
-    {
-      "id": "src_app_api_agent_status",
-      "label": "Status",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "code",
-      "norm_label": "status",
-      "source_file": "src/app/api/agent.ts",
-      "source_location": "L60"
     },
     {
       "id": "src_app_components_apisearchdrawer",
@@ -2725,17 +2620,6 @@
       "source_location": "L7"
     },
     {
-      "id": "ref_axios",
-      "label": "axios",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "GraphViewer.tsx",
-      "file_type": "concept",
-      "norm_label": "axios",
-      "source_file": "package.json",
-      "source_location": "L18"
-    },
-    {
       "id": "ref_d3_force",
       "label": "d3-force",
       "_origin": "ast",
@@ -2813,14 +2697,25 @@
       "source_file": "web-vitals"
     },
     {
-      "id": "src_app_components_dropzone",
-      "label": "DropZone.tsx",
+      "id": "src_app_components_appheader",
+      "label": "AppHeader.tsx",
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "dropzone.tsx",
-      "source_file": "src/app/components/DropZone.tsx",
+      "norm_label": "appheader.tsx",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_components_datatable",
+      "label": "DataTable.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "datatable.tsx",
+      "source_file": "src/app/components/DataTable.tsx",
       "source_location": "L1"
     },
     {
@@ -2843,7 +2738,7 @@
       "file_type": "code",
       "norm_label": "datatablecontainer",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L20"
+      "source_location": "L14"
     },
     {
       "id": "src_app_components_graphdatahandler_graphviewer",
@@ -2854,7 +2749,7 @@
       "file_type": "code",
       "norm_label": "graphviewer",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L19"
+      "source_location": "L13"
     },
     {
       "id": "src_app_components_graphreportview",
@@ -2868,14 +2763,25 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_components_introduction",
-      "label": "Introduction.tsx",
+      "id": "src_app_components_sourceuploadcard",
+      "label": "SourceUploadCard.tsx",
       "_origin": "ast",
       "community": 4,
       "community_name": "GraphDataHandler.tsx",
       "file_type": "code",
-      "norm_label": "introduction.tsx",
-      "source_file": "src/app/components/Introduction.tsx",
+      "norm_label": "sourceuploadcard.tsx",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_components_uploadview",
+      "label": "UploadView.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "GraphDataHandler.tsx",
+      "file_type": "code",
+      "norm_label": "uploadview.tsx",
+      "source_file": "src/app/components/UploadView.tsx",
       "source_location": "L1"
     },
     {
@@ -2987,18 +2893,6 @@
       "norm_label": "web-vitals",
       "source_file": "package.json",
       "source_location": "L36"
-    },
-    {
-      "id": "agents_rules_code_structure_1_layer_boundaries",
-      "label": "1. Layer Boundaries",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "GraphDataHandler.tsx",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. layer boundaries",
-      "source_file": ".agents/rules/code-structure.md",
-      "source_location": "L8"
     },
     {
       "id": "tsconfig",
@@ -3491,26 +3385,26 @@
     },
     {
       "source": "src_app_components_graphdatahandler_graphdatahandler",
-      "target": "src_app_components_dropzone_dropzone",
+      "target": "src_app_components_appheader_appheader",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L225",
+      "source_location": "L156",
       "weight": 1.0
     },
     {
       "source": "src_app_components_graphdatahandler_graphdatahandler",
-      "target": "src_app_components_introduction_introduction",
+      "target": "src_app_components_uploadview_uploadview",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L229",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -3522,7 +3416,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L260",
+      "source_location": "L211",
       "weight": 1.0
     },
     {
@@ -3534,7 +3428,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L312",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -3546,7 +3440,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -3558,7 +3452,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L63",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -3570,7 +3464,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L65",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -3582,7 +3476,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L1003",
+      "source_location": "L1015",
       "weight": 1.0
     },
     {
@@ -3594,7 +3488,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L1014",
+      "source_location": "L1026",
       "weight": 1.0
     },
     {
@@ -3606,7 +3500,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L1027",
+      "source_location": "L1039",
       "weight": 1.0
     },
     {
@@ -3618,7 +3512,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L1136",
+      "source_location": "L1148",
       "weight": 1.0
     },
     {
@@ -3630,7 +3524,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/components/GraphViewer.tsx",
-      "source_location": "L179",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview_uploadview",
+      "target": "src_app_components_sourceuploadcard_sourceuploadcard",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -3642,7 +3548,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L203",
+      "source_location": "L216",
       "weight": 1.0
     },
     {
@@ -3654,7 +3560,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L236",
+      "source_location": "L258",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler_usefilehandler",
+      "target": "src_app_utils_graph_storage_setcacheditem",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -3690,7 +3608,43 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/layout/App.tsx",
-      "source_location": "L124",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage_clearcachedgraphdata",
+      "target": "src_app_utils_graph_storage_opendb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage_getcacheditem",
+      "target": "src_app_utils_graph_storage_opendb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage_setcacheditem",
+      "target": "src_app_utils_graph_storage_opendb",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3751,6 +3705,18 @@
       "context": "call",
       "source_file": "src/app/utils/sanitizeGraphData.ts",
       "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler_usefilehandler",
+      "target": "src_app_hooks_usefilehandler_usefilehandler_restorecacheddata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -3991,7 +3957,7 @@
       "context": "import",
       "deferred": true,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L20",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -4004,7 +3970,7 @@
       "context": "import",
       "deferred": true,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L19",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -4911,26 +4877,38 @@
     },
     {
       "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_dropzone_dropzone",
+      "target": "src_app_hooks_usegraphdata_usegraphdata",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L13",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
       "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_introduction_introduction",
+      "target": "src_app_components_appheader_appheader",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L14",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_uploadview_uploadview",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -4942,19 +4920,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_hooks_usegraphdata_usegraphdata",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L16",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -5090,15 +5056,15 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_hooks_usefilehandler",
-      "target": "src_app_utils_parquet_utils_readparquetfile",
+      "source": "src_app_components_uploadview",
+      "target": "src_app_components_sourceuploadcard_sourceuploadcard",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L10",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -5110,7 +5076,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5122,7 +5088,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5134,7 +5100,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5146,7 +5112,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5158,7 +5124,31 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_utils_graph_storage_getcacheditem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_utils_graph_storage_setcacheditem",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -5170,7 +5160,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L3",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -5182,7 +5172,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -5194,7 +5184,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L5",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -5206,7 +5196,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -5218,7 +5208,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -5230,12 +5220,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "src_app_hooks_usefilehandler",
       "target": "src_app_models_covariate_covariate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_utils_parquet_utils_readparquetfile",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5543,6 +5545,42 @@
       "context": "import",
       "source_file": "src/app/components/APISearchDrawer.tsx",
       "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_appheader",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_appheader",
+      "target": "ref_mui_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_appheader",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -5870,42 +5908,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_components_dropzone",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_dropzone",
-      "target": "ref_mui_material",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_dropzone",
-      "target": "ref_mui_icons_material",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_components_graphdatahandler",
       "target": "ref_react",
       "relation": "imports_from",
@@ -5915,54 +5917,6 @@
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
       "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "ref_react_dropzone",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_dropzone",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_components_introduction",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_graphdatahandler",
-      "target": "src_app_hooks_usefilehandler",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -5974,7 +5928,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L16",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -5986,7 +5940,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L17",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -6011,6 +5965,42 @@
       "context": "import",
       "source_file": "src/app/components/GraphDataHandler.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_appheader",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_uploadview",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_hooks_usefilehandler",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -6218,30 +6208,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_components_introduction",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/Introduction.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_introduction",
-      "target": "ref_mui_material",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/components/Introduction.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_components_searchdrawer",
       "target": "ref_react",
       "relation": "imports_from",
@@ -6290,6 +6256,90 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_components_sourceuploadcard",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_sourceuploadcard",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_sourceuploadcard",
+      "target": "ref_mui_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "src_app_components_sourceuploadcard",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "ref_mui_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_hooks_usefilehandler",
       "target": "ref_react",
       "relation": "imports_from",
@@ -6303,7 +6353,7 @@
     },
     {
       "source": "src_app_hooks_usefilehandler",
-      "target": "src_app_utils_parquet_utils",
+      "target": "src_app_models_graphify",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6315,26 +6365,14 @@
     },
     {
       "source": "src_app_hooks_usefilehandler",
-      "target": "src_app_models_graphify",
+      "target": "src_app_utils_graph_storage",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_hooks_usefilehandler",
-      "target": "ref_react_router_dom",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L2",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -6346,7 +6384,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L3",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -6358,7 +6396,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L4",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -6370,7 +6408,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L5",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -6382,7 +6420,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -6394,7 +6432,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L7",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -6406,12 +6444,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "src_app_hooks_usefilehandler",
       "target": "src_app_models_covariate",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/hooks/useFileHandler.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_hooks_usefilehandler",
+      "target": "src_app_utils_parquet_utils",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6623,18 +6673,6 @@
       "context": "import",
       "source_file": "src/app/layout/App.tsx",
       "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_layout_app",
-      "target": "ref_mui_icons_material",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/layout/App.tsx",
-      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -7009,7 +7047,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".agents/rules/code-structure.md",
-      "source_location": "L34",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -7054,138 +7092,6 @@
       "confidence_score": 1.0,
       "source_file": ".agents/skills/diagram-design/SKILL.md",
       "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search",
-      "target": "claude_commands_search_rules",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search",
-      "target": "claude_commands_search_answer_format",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L33",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search",
-      "target": "claude_commands_search_strategy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search.md",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_docs",
-      "target": "claude_commands_search_docs_rules",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_docs",
-      "target": "claude_commands_search_docs_answer_format",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_docs",
-      "target": "claude_commands_search_docs_strategy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-docs.md",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_knowledge",
-      "target": "claude_commands_search_knowledge_rules",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_knowledge",
-      "target": "claude_commands_search_knowledge_answer_format",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_search_knowledge",
-      "target": "claude_commands_search_knowledge_strategy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/search-knowledge.md",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_todo",
-      "target": "claude_commands_todo_storage_format",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_todo",
-      "target": "claude_commands_todo_instructions",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "claude_commands_todo",
-      "target": "claude_commands_todo_commands",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".claude/commands/todo.md",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -8058,6 +7964,28 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_components_appheader",
+      "target": "src_app_components_appheader_appheaderprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_appheader",
+      "target": "src_app_components_appheader_appheader",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/AppHeader.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_components_datatable",
       "target": "src_app_components_datatable_datatable",
       "relation": "contains",
@@ -8124,28 +8052,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_components_dropzone",
-      "target": "src_app_components_dropzone_dropzone",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_components_dropzone",
-      "target": "src_app_components_dropzone_dropzoneprops",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/components/DropZone.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_components_graphdatahandler",
       "target": "src_app_components_graphdatahandler_graphviewer",
       "relation": "contains",
@@ -8153,7 +8059,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L19",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -8164,7 +8070,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L20",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -8175,7 +8081,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L22",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_graphdatahandler",
+      "target": "src_app_components_graphdatahandler_graphdatahandlerprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/GraphDataHandler.tsx",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -8186,7 +8103,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/components/GraphDataHandler.tsx",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -8256,17 +8173,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_components_introduction",
-      "target": "src_app_components_introduction_introduction",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/components/Introduction.tsx",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_components_searchdrawer",
       "target": "src_app_components_searchdrawer_searchdrawerprops",
       "relation": "contains",
@@ -8289,14 +8195,47 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_hooks_usefilehandler",
-      "target": "src_app_hooks_usefilehandler_basefilenames",
+      "source": "src_app_components_sourceuploadcard",
+      "target": "src_app_components_sourceuploadcard_sourceuploadcardprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L19",
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_sourceuploadcard",
+      "target": "src_app_components_sourceuploadcard_sourceuploadcard",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/SourceUploadCard.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "src_app_components_uploadview_uploadviewprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_components_uploadview",
+      "target": "src_app_components_uploadview_uploadview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/components/UploadView.tsx",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -8307,7 +8246,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L29",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -8318,7 +8257,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L39",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -8329,7 +8268,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L45",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -8340,7 +8279,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/hooks/useFileHandler.ts",
-      "source_location": "L81",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -8395,7 +8334,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout/App.tsx",
-      "source_location": "L26",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -8406,7 +8345,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout/App.tsx",
-      "source_location": "L57",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -8748,6 +8687,50 @@
       "confidence_score": 1.0,
       "source_file": "src/app/models/text-unit.ts",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage",
+      "target": "src_app_utils_graph_storage_setcacheditem",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage",
+      "target": "src_app_utils_graph_storage_getcacheditem",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage",
+      "target": "src_app_utils_graph_storage_opendb",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_utils_graph_storage",
+      "target": "src_app_utils_graph_storage_clearcachedgraphdata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/utils/graph-storage.ts",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -9274,5 +9257,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1fab50d85b24a02e991ce7bbdfdedb76c2acf6c8"
+  "built_at_commit": "33932ea61043f76a13505acf014b1e9b8a6f5e62"
 }

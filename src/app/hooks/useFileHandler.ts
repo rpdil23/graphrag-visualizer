@@ -1,5 +1,4 @@
-import { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Entity } from "../models/entity";
 import { Relationship } from "../models/relationship";
 import { Document } from "../models/document";
@@ -15,16 +14,7 @@ import {
   GraphifyManifestItem,
   GraphifyNode,
 } from "../models/graphify";
-
-const baseFileNames = [
-  "entities.parquet",
-  "relationships.parquet",
-  "documents.parquet",
-  "text_units.parquet",
-  "communities.parquet",
-  "community_reports.parquet",
-  "covariates.parquet",
-];
+import { getCachedItem, setCachedItem } from "../utils/graph-storage";
 
 const baseMapping: { [key: string]: string } = {
   "entities.parquet": "entity",
@@ -79,12 +69,14 @@ function extractCommunities(
 }
 
 const useFileHandler = () => {
-  const navigate = useNavigate();
-
-  // Active data source
-  const [dataSource, setDataSource] = useState<"graphrag" | "graphify">(
+  const [dataSource, setDataSourceState] = useState<"graphrag" | "graphify">(
     "graphrag",
   );
+
+  const setDataSource = useCallback((source: "graphrag" | "graphify") => {
+    setDataSourceState(source);
+    setCachedItem("active_source", source);
+  }, []);
 
   // GraphRAG state
   const [entities, setEntities] = useState<Entity[]>([]);
@@ -110,6 +102,42 @@ const useFileHandler = () => {
     {},
   );
   const labelsRef = useRef<Record<string, string>>({});
+
+  // Restore cached state on initial mount
+  useEffect(() => {
+    async function restoreCachedData() {
+      const activeSource = await getCachedItem<"graphrag" | "graphify">(
+        "active_source",
+      );
+      const ragData = await getCachedItem<any>("graphrag_data");
+      const gData = await getCachedItem<any>("graphify_data");
+
+      if (ragData && ragData.entities?.length > 0) {
+        setEntities(ragData.entities);
+        setRelationships(ragData.relationships || []);
+        setDocuments(ragData.documents || []);
+        setTextUnits(ragData.textunits || []);
+        setCommunities(ragData.communities || []);
+        setCommunityReports(ragData.communityReports || []);
+        setCovariates(ragData.covariates || []);
+      }
+
+      if (gData && gData.graphifyData?.nodes?.length > 0) {
+        setGraphifyData(gData.graphifyData);
+        setGraphifyReport(gData.graphifyReport || null);
+        setGraphifyManifest(gData.graphifyManifest || []);
+        setGraphifyCommunities(gData.graphifyCommunities || []);
+        setGraphifyLabels(gData.graphifyLabels || {});
+        labelsRef.current = gData.graphifyLabels || {};
+      }
+
+      if (activeSource) {
+        setDataSourceState(activeSource);
+      }
+    }
+
+    restoreCachedData();
+  }, []);
 
   const handleFilesRead = async (files: File[]) => {
     await loadFiles(files);
@@ -138,48 +166,33 @@ const useFileHandler = () => {
       let loadedGraph: GraphifyGraph | null = null;
       let loadedManifest: GraphifyManifestItem[] = [];
       let loadedLabels: Record<string, string> = { ...labelsRef.current };
+      let loadedReport: string | null = null;
 
       for (const file of graphifyFiles) {
         const fileName =
           typeof file === "string" ? file.split("/").pop()! : file.name;
 
-        let text = "";
-        if (typeof file === "string") {
-          const res = await fetch(file);
-          if (res.ok) {
-            text = await res.text();
-          }
-        } else {
-          text = await file.text();
-        }
-
-        if (!text) continue;
-
         try {
-          if (
-            fileName.toLowerCase().includes("labels.json") ||
-            fileName === ".graphify_labels.json"
-          ) {
-            const labelsObj = JSON.parse(text);
-            loadedLabels = { ...loadedLabels, ...labelsObj };
+          let text: string;
+          if (typeof file === "string") {
+            const res = await fetch(file);
+            text = await res.text();
+          } else {
+            text = await file.text();
+          }
+
+          if (fileName.includes("manifest.json")) {
+            loadedManifest = JSON.parse(text);
+            setGraphifyManifest(loadedManifest);
+          } else if (fileName.includes("labels.json")) {
+            loadedLabels = JSON.parse(text);
             labelsRef.current = loadedLabels;
             setGraphifyLabels(loadedLabels);
-          } else if (
-            fileName.toLowerCase().includes("manifest.json") &&
-            !fileName.includes("public_manifest")
-          ) {
-            const manifestObj = JSON.parse(text);
-            loadedManifest = Object.entries(manifestObj).map(
-              ([fPath, info]: [string, any]) => ({
-                file: fPath,
-                ...(typeof info === "object" ? info : {}),
-              }),
-            );
-            setGraphifyManifest(loadedManifest);
           } else if (
             fileName.toLowerCase().includes("report.md") ||
             fileName.endsWith(".md")
           ) {
+            loadedReport = text;
             setGraphifyReport(text);
           } else if (fileName.endsWith(".json")) {
             const parsed = JSON.parse(text);
@@ -202,7 +215,16 @@ const useFileHandler = () => {
         setGraphifyData(loadedGraph);
         const comms = extractCommunities(loadedGraph.nodes, loadedLabels);
         setGraphifyCommunities(comms);
-        setDataSource("graphify");
+        setDataSourceState("graphify");
+
+        setCachedItem("active_source", "graphify");
+        setCachedItem("graphify_data", {
+          graphifyData: loadedGraph,
+          graphifyReport: loadedReport,
+          graphifyManifest: loadedManifest,
+          graphifyCommunities: comms,
+          graphifyLabels: loadedLabels,
+        });
       }
     }
 
@@ -255,81 +277,33 @@ const useFileHandler = () => {
         }
       }
 
-      setEntities(entitiesArray.flat());
-      setRelationships(relationshipsArray.flat());
-      setDocuments(documentsArray.flat());
-      setTextUnits(textUnitsArray.flat());
-      setCommunities(communitiesArray.flat());
-      setCommunityReports(communityReportsArray.flat());
-      setCovariates(covariatesArray.flat());
-      setDataSource("graphrag");
-    }
-  };
+      const flatEntities = entitiesArray.flat();
+      const flatRelationships = relationshipsArray.flat();
+      const flatDocuments = documentsArray.flat();
+      const flatTextUnits = textUnitsArray.flat();
+      const flatCommunities = communitiesArray.flat();
+      const flatReports = communityReportsArray.flat();
+      const flatCovariates = covariatesArray.flat();
 
-  const checkFileExists = async (filePath: string) => {
-    try {
-      const response = await fetch(filePath, {
-        method: "HEAD",
-        cache: "no-store",
+      setEntities(flatEntities);
+      setRelationships(flatRelationships);
+      setDocuments(flatDocuments);
+      setTextUnits(flatTextUnits);
+      setCommunities(flatCommunities);
+      setCommunityReports(flatReports);
+      setCovariates(flatCovariates);
+      setDataSourceState("graphrag");
+
+      setCachedItem("active_source", "graphrag");
+      setCachedItem("graphrag_data", {
+        entities: flatEntities,
+        relationships: flatRelationships,
+        documents: flatDocuments,
+        textunits: flatTextUnits,
+        communities: flatCommunities,
+        communityReports: flatReports,
+        covariates: flatCovariates,
       });
-
-      if (response.ok) {
-        const contentType = response.headers.get("Content-Type") || "";
-        // If server falls back to index.html for 404, reject
-        if (contentType.includes("text/html")) {
-          return false;
-        }
-        return true;
-      }
-      return false;
-    } catch (error) {
-      return false;
-    }
-  };
-
-  const loadDefaultFiles = async () => {
-    const parquetFilesToLoad: string[] = [];
-
-    // Check GraphRAG default files
-    for (const baseName of baseFileNames) {
-      const prefixedPath =
-        process.env.PUBLIC_URL + `/artifacts/create_final_${baseName}`;
-      const unprefixedPath = process.env.PUBLIC_URL + `/artifacts/${baseName}`;
-
-      if (await checkFileExists(prefixedPath)) {
-        parquetFilesToLoad.push(prefixedPath);
-      } else if (await checkFileExists(unprefixedPath)) {
-        parquetFilesToLoad.push(unprefixedPath);
-      }
-    }
-
-    if (parquetFilesToLoad.length > 0) {
-      await loadFiles(parquetFilesToLoad);
-      navigate("/graph", { replace: true });
-      return;
-    }
-
-    // Check Graphify default files
-    const graphifyPaths = [
-      process.env.PUBLIC_URL + "/graphify-out/graph.json",
-      process.env.PUBLIC_URL + "/artifacts/graph.json",
-      process.env.PUBLIC_URL + "/graphify-out/GRAPH_REPORT.md",
-      process.env.PUBLIC_URL + "/graphify-out/manifest.json",
-      process.env.PUBLIC_URL + "/graphify-out/.graphify_labels.json",
-    ];
-
-    const graphifyFilesToLoad: string[] = [];
-    for (const p of graphifyPaths) {
-      if (await checkFileExists(p)) {
-        graphifyFilesToLoad.push(p);
-      }
-    }
-
-    if (graphifyFilesToLoad.length > 0) {
-      await loadFiles(graphifyFilesToLoad);
-      navigate("/graph", { replace: true });
-    } else {
-      console.log("No default GraphRAG or Graphify files found in public folder.");
     }
   };
 
@@ -353,7 +327,6 @@ const useFileHandler = () => {
     graphifyLabels,
     // Handlers
     handleFilesRead,
-    loadDefaultFiles,
   };
 };
 

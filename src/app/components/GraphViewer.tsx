@@ -116,8 +116,20 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
   useEffect(() => {
     if (dataSource === "graphify") {
       setColorByCommunity(true);
+    } else {
+      setColorByCommunity(false);
     }
   }, [dataSource]);
+
+  const getNodeColorCategory = useCallback(
+    (node: any): string => {
+      if (colorByCommunity && node?.community_name) {
+        return String(node.community_name);
+      }
+      return String(node?.type || node?.file_type || node?.label || "Entity");
+    },
+    [colorByCommunity],
+  );
 
   const hasCommunityData = useMemo(
     () => data.nodes.some((n) => Boolean(n.community_name)),
@@ -1038,7 +1050,7 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
           key={graphRenderKey}
           ref={graphRef}
           graphData={displayGraphData}
-          nodeAutoColorBy={colorByCommunity ? "community_name" : "type"}
+          nodeAutoColorBy={getNodeColorCategory}
           nodeRelSize={NODE_R}
           cooldownTicks={100}
           linkDirectionalArrowLength={3.5}
@@ -1138,7 +1150,7 @@ const GraphViewer: React.FC<GraphViewerProps> = ({
             ref={graphRef}
             extraRenderers={extraRenderers}
             graphData={displayGraphData}
-            nodeAutoColorBy={colorByCommunity ? "community_name" : "type"}
+            nodeAutoColorBy={getNodeColorCategory}
             nodeRelSize={NODE_R}
             linkDirectionalArrowLength={3.5}
             linkDirectionalArrowRelPos={1}
